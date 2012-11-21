@@ -115,6 +115,16 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
+			<string>Delegate</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>delegate</string>
+			<key>extra</key>
+			<string>None|0|Docment Root|1|Owner|2</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
 			<string>Is Password</string>
 			<key>type</key>
 			<string>Check</string>

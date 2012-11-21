@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		46FD8F75165D3806009A896B /* none.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8F74165D3806009A896B /* none.png */; };
+		46FD8F80165D399D009A896B /* CCControlSliderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8F79165D399D009A896B /* CCControlSliderHelper.m */; };
+		46FD8F81165D399D009A896B /* CCEditBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8F7B165D399D009A896B /* CCEditBox.m */; };
+		46FD8F82165D399D009A896B /* GUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8F7D165D399D009A896B /* GUtility.m */; };
 		77055FB513D0E5CA009DD63A /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055FB313D0E5CA009DD63A /* logo-icon.png */; };
 		77055FB613D0E5CA009DD63A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055FB413D0E5CA009DD63A /* logo.png */; };
 		77156DB1137F0351005EF746 /* CCBSpriteSheetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77156DB0137F0351005EF746 /* CCBSpriteSheetParser.m */; };
@@ -741,6 +744,12 @@
 
 /* Begin PBXFileReference section */
 		46FD8F74165D3806009A896B /* none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = none.png; sourceTree = "<group>"; };
+		46FD8F78165D399D009A896B /* CCControlSliderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlSliderHelper.h; sourceTree = "<group>"; };
+		46FD8F79165D399D009A896B /* CCControlSliderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlSliderHelper.m; sourceTree = "<group>"; };
+		46FD8F7A165D399D009A896B /* CCEditBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEditBox.h; sourceTree = "<group>"; };
+		46FD8F7B165D399D009A896B /* CCEditBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEditBox.m; sourceTree = "<group>"; };
+		46FD8F7C165D399D009A896B /* GUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUtility.h; sourceTree = "<group>"; };
+		46FD8F7D165D399D009A896B /* GUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUtility.m; sourceTree = "<group>"; };
 		77055FB313D0E5CA009DD63A /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
 		77055FB413D0E5CA009DD63A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		77156DAF137F0351005EF746 /* CCBSpriteSheetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSpriteSheetParser.h; sourceTree = "<group>"; };
@@ -1753,6 +1762,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46FD8F76165D399D009A896B /* CustomWidget */ = {
+			isa = PBXGroup;
+			children = (
+				46FD8F78165D399D009A896B /* CCControlSliderHelper.h */,
+				46FD8F79165D399D009A896B /* CCControlSliderHelper.m */,
+				46FD8F7A165D399D009A896B /* CCEditBox.h */,
+				46FD8F7B165D399D009A896B /* CCEditBox.m */,
+				46FD8F7C165D399D009A896B /* GUtility.h */,
+				46FD8F7D165D399D009A896B /* GUtility.m */,
+			);
+			path = CustomWidget;
+			sourceTree = "<group>";
+		};
 		776041E01498F4A00078095D /* Document Readers & Writers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2162,6 +2184,7 @@
 		7789ABEF133AB17100CEFCC7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				46FD8F76165D399D009A896B /* CustomWidget */,
 				E35A134E15B038D700C9AA15 /* ThoMoNetworking */,
 				E3F541BA15AED66D00EAAFBD /* Fragaria */,
 				E3E087611566907F008F1FDB /* JSCocoa */,
@@ -4458,6 +4481,9 @@
 				E3B7BCA015E3BCFE00CF95EF /* MainToolbarDelegate.m in Sources */,
 				E3AF6CDB15F0A9BC0048DB2A /* HelpWindow.m in Sources */,
 				E3AF6CE415F0DBA90048DB2A /* HelpPage.m in Sources */,
+				46FD8F80165D399D009A896B /* CCControlSliderHelper.m in Sources */,
+				46FD8F81165D399D009A896B /* CCEditBox.m in Sources */,
+				46FD8F82165D399D009A896B /* GUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,45 +10,8 @@
 	<string>CCControlSlider</string>
 	<key>editorClassName</key>
 	<string>CCControlSlider</string>
-	<key>propertiesOverridden</key>
-	<array>
-		<dict>
-			<key>readOnly</key>
-			<true/>
-			<key>type</key>
-			<string>Size</string>
-			<key>name</key>
-			<string>contentSize</string>
-			<key>displayName</key>
-			<string>Content size</string>
-		</dict>
-	</array>
 	<key>properties</key>
 	<array>
-		<dict>
-			<key>displayName</key>
-			<string>Max Value</string>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>maximumValue</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Min Value</string>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>minimumValue</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Value</string>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>value</string>
-		</dict>
 		<dict>
 			<key>name</key>
 			<string>CCControlSlider</string>
@@ -70,11 +33,11 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>ThumbSprite</string>
+			<string>Background</string>
 			<key>type</key>
 			<string>SpriteFrame</string>
 			<key>name</key>
-			<string>thumbSpriteFrame</string>
+			<string>backgroundSpriteFrame</string>
 		</dict>
 		<dict>
 			<key>default</key>
@@ -104,11 +67,48 @@
 				<string>contentSize</string>
 			</array>
 			<key>displayName</key>
-			<string>Background</string>
+			<string>ThumbSprite</string>
 			<key>type</key>
 			<string>SpriteFrame</string>
 			<key>name</key>
-			<string>backgroundSpriteFrame</string>
+			<string>thumbSpriteFrame</string>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Max Value</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>maximumValue</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Min Value</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>minimumValue</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Value</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>value</string>
 		</dict>
 	</array>
 </dict>

@@ -10,24 +10,6 @@
 	<string>CCEditBox</string>
 	<key>editorClassName</key>
 	<string>CCEditBox</string>
-	<key>propertiesOverridden</key>
-	<array>
-		<dict>
-			<key>default</key>
-			<array>
-				<string>120</string>
-				<integer>40</integer>
-			</array>
-			<key>readOnly</key>
-			<true/>
-			<key>type</key>
-			<string>Size</string>
-			<key>name</key>
-			<string>contentSize</string>
-			<key>displayName</key>
-			<string>Content size</string>
-		</dict>
-	</array>
 	<key>properties</key>
 	<array>
 		<dict>
@@ -104,16 +86,6 @@
 			<string>inputMode</string>
 			<key>extra</key>
 			<string>Any|0|EmailAddr|1|Numeric|2|PhoneNumber|3|Url|4|Decimal|5|SingleLine|6</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Delegate</string>
-			<key>type</key>
-			<string>IntegerLabeled</string>
-			<key>name</key>
-			<string>delegate</string>
-			<key>extra</key>
-			<string>None|0|Docment Root|1|Owner|2</string>
 		</dict>
 		<dict>
 			<key>displayName</key>

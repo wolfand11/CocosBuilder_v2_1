@@ -19,7 +19,7 @@
 				<integer>40</integer>
 			</array>
 			<key>readOnly</key>
-			<false/>
+			<true/>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>

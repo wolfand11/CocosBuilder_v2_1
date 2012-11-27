@@ -24,11 +24,66 @@
 		</dict>
 		<dict>
 			<key>displayName</key>
+			<string>Property1</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>property1</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Property2</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>property2</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
 			<string>Sec/rotation</string>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
 			<string>secondsPerRotation</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Property3</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>property3</string>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>defaultSerialization</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>readOnly</key>
+			<false/>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>ScaleLock</string>
+			<key>name</key>
+			<string>scale</string>
+			<key>displayName</key>
+			<string>Scale</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<false/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
 		</dict>
 	</array>
 </dict>

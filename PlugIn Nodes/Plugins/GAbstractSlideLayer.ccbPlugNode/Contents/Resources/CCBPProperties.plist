@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>GAbstractTouchLayer</string>
+	<key>canHaveChildren</key>
+	<string>YES</string>
+	<key>className</key>
+	<string>GAbstractSlideLayer</string>
+	<key>editorClassName</key>
+	<string>GAbstractSlideLayer</string>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>GAbstractSlideLayer</string>
+			<key>displayName</key>
+			<string>GAbstractSlideLayer</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Direction</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>direction</string>
+			<key>extra</key>
+			<string>Horizontal|0|Vertical|1|Both|2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>inheritsFrom</key>
-	<string>CCSprite</string>
+	<string>CCRotatingSprite</string>
 	<key>canHaveChildren</key>
 	<string>YES</string>
 	<key>className</key>
-	<string>CCRotatingSprite</string>
+	<string>CCSlideLayer</string>
 	<key>editorClassName</key>
-	<string>CCRotatingSprite</string>
+	<string>CCSlideLayer</string>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>name</key>
-			<string>CCRotatingSprite</string>
+			<string>CCSlideLayer</string>
 			<key>displayName</key>
-			<string>CCRotatingSprite</string>
+			<string>CCSlideLayer</string>
 			<key>type</key>
 			<string>Separator</string>
 			<key>dontSetInEditor</key>
@@ -58,16 +58,8 @@
 	<key>propertiesOverridden</key>
 	<array>
 		<dict>
-			<key>defaultSerialization</key>
-			<array>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>0</integer>
-			</array>
 			<key>readOnly</key>
 			<false/>
-			<key>animatable</key>
-			<true/>
 			<key>type</key>
 			<string>ScaleLock</string>
 			<key>name</key>

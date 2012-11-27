@@ -23,6 +23,30 @@
 			<true/>
 		</dict>
 		<dict>
+			<key>displayName</key>
+			<string>Max Value</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>maximumValue</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Min Value</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>minimumValue</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Value</string>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>value</string>
+		</dict>
+		<dict>
 			<key>default</key>
 			<array>
 				<string></string>
@@ -85,30 +109,6 @@
 			<string>contentSize</string>
 			<key>displayName</key>
 			<string>Content size</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Max Value</string>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>maximumValue</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Min Value</string>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>minimumValue</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Value</string>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>value</string>
 		</dict>
 	</array>
 </dict>

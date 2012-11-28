@@ -39,6 +39,8 @@
 			<string>property2</string>
 		</dict>
 		<dict>
+			<key>default</key>
+			<real>1</real>
 			<key>displayName</key>
 			<string>Sec/rotation</string>
 			<key>type</key>
@@ -58,15 +60,7 @@
 	<key>propertiesOverridden</key>
 	<array>
 		<dict>
-			<key>defaultSerialization</key>
-			<array>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>0</integer>
-			</array>
 			<key>readOnly</key>
-			<false/>
-			<key>animatable</key>
 			<true/>
 			<key>type</key>
 			<string>ScaleLock</string>
@@ -76,14 +70,37 @@
 			<string>Scale</string>
 		</dict>
 		<dict>
+			<key>animatable</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>200</integer>
+				<integer>200</integer>
+			</array>
 			<key>readOnly</key>
-			<false/>
+			<true/>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
 			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>20</integer>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>readOnly</key>
+			<true/>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>Degrees</string>
+			<key>name</key>
+			<string>rotation</string>
+			<key>displayName</key>
+			<string>Rotation</string>
 		</dict>
 	</array>
 </dict>

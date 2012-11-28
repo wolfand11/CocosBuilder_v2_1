@@ -24,7 +24,7 @@
 		</dict>
 		<dict>
 			<key>readOnly</key>
-			<true/>
+			<false/>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>
@@ -34,7 +34,7 @@
 		</dict>
 		<dict>
 			<key>readOnly</key>
-			<true/>
+			<false/>
 			<key>displayName</key>
 			<string>TouchRectOrigin</string>
 			<key>type</key>

@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>inheritsFrom</key>
-	<string>GAbstractTouchLayer</string>
-	<key>canHaveChildren</key>
-	<string>YES</string>
-	<key>className</key>
-	<string>GAbstractSlideLayer</string>
-	<key>editorClassName</key>
-	<string>GAbstractSlideLayer</string>
 	<key>properties</key>
 	<array>
 		<dict>
@@ -34,13 +26,36 @@
 		</dict>
 		<dict>
 			<key>default</key>
-			<real>5.1</real>
+			<real>1.2</real>
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
-			<string>SpeedDecreaseFactor</string>
+			<string>scale</string>
 			<key>displayName</key>
-			<string>speedDecreaseFactor</string>
+			<string>Scale</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>100</integer>
+				<integer>100</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<true/>
+			<key>displayName</key>
+			<string>Clips to bounds</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>name</key>
+			<string>clipsToBounds</string>
 		</dict>
 	</array>
 </dict>

@@ -47,6 +47,12 @@ bool AppDelegate::applicationDidFinishLaunching()
         CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/picture/960_640");
         pDirector->setContentScaleFactor(resourceSize.height/designSize.height);
     }
+    else
+    {
+        CCSize resourceSize = CCSizeMake(960, 640);
+        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/picture/960_640");
+        pDirector->setContentScaleFactor(resourceSize.height/designSize.height);
+    }
     
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionNoBorder);
 
@@ -66,6 +72,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     cocos2d::extension::CCBReader * ccbReader = new cocos2d::extension::CCBReader(ccNodeLoaderLibrary);
     
     CCScene *pScene = ccbReader->createSceneWithNodeGraphFromFile("game_res/ccb/Test.ccbi");
+    
+    CCSprite* sprite = CCSprite::create("Icon.png");
+    sprite->setPosition(ccp(240,160));
+    pScene->addChild(sprite,10);
     
     ccbReader->release();
     

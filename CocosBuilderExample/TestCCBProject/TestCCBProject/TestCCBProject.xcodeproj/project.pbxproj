@@ -203,6 +203,8 @@
 		462C55621666127D000C4D24 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 462C55611666127D000C4D24 /* AppDelegate.cpp */; };
 		462C55651666127D000C4D24 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 462C55641666127D000C4D24 /* HelloWorldScene.cpp */; };
 		462C556C1666131D000C4D24 /* game_res in Resources */ = {isa = PBXBuildFile; fileRef = 462C556B1666131D000C4D24 /* game_res */; };
+		464E29DC166B378500149831 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 464E29DB166B378500149831 /* Default-568h@2x.png */; };
+		464E29DF166B383B00149831 /* GResourcePathHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 464E29DD166B383B00149831 /* GResourcePathHelper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -636,6 +638,9 @@
 		462C55631666127D000C4D24 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		462C55641666127D000C4D24 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		462C556B1666131D000C4D24 /* game_res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = game_res; path = Resources/game_res; sourceTree = "<group>"; };
+		464E29DB166B378500149831 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		464E29DD166B383B00149831 /* GResourcePathHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GResourcePathHelper.cpp; sourceTree = "<group>"; };
+		464E29DE166B383B00149831 /* GResourcePathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GResourcePathHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -707,6 +712,7 @@
 			children = (
 				462C556B1666131D000C4D24 /* game_res */,
 				462C52D516661277000C4D24 /* CloseNormal.png */,
+				464E29DB166B378500149831 /* Default-568h@2x.png */,
 				462C52D716661277000C4D24 /* CloseSelected.png */,
 				462C52D916661277000C4D24 /* Default.png */,
 				462C52DB16661277000C4D24 /* HelloWorld.png */,
@@ -1522,6 +1528,8 @@
 				462C55611666127D000C4D24 /* AppDelegate.cpp */,
 				462C55631666127D000C4D24 /* HelloWorldScene.h */,
 				462C55641666127D000C4D24 /* HelloWorldScene.cpp */,
+				464E29DD166B383B00149831 /* GResourcePathHelper.cpp */,
+				464E29DE166B383B00149831 /* GResourcePathHelper.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1589,6 +1597,7 @@
 				462C52EA16661277000C4D24 /* iTunesArtwork in Resources */,
 				462C537C16661278000C4D24 /* ChangeLog in Resources */,
 				462C556C1666131D000C4D24 /* game_res in Resources */,
+				464E29DC166B378500149831 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1773,6 +1782,7 @@
 				462C55591666127D000C4D24 /* HttpClient.cpp in Sources */,
 				462C55621666127D000C4D24 /* AppDelegate.cpp in Sources */,
 				462C55651666127D000C4D24 /* HelloWorldScene.cpp in Sources */,
+				464E29DF166B383B00149831 /* GResourcePathHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1849,6 +1859,7 @@
 				GCC_PREFIX_HEADER = TestCCBProject/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = TestCCBProject/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestCCBProject/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -1858,6 +1869,7 @@
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1871,6 +1883,7 @@
 				GCC_PREFIX_HEADER = TestCCBProject/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = TestCCBProject/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/TestCCBProject/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -1880,6 +1893,7 @@
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1904,6 +1918,7 @@
 				462C556A1666127D000C4D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

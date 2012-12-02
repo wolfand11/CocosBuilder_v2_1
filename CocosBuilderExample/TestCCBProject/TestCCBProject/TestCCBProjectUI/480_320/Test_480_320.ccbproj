@@ -13,21 +13,12 @@
 	<key>javascriptBased</key>
 	<false/>
 	<key>onlyPublishCCBs</key>
-	<true/>
+	<false/>
 	<key>publishDirectory</key>
-	<string>ccb</string>
+	<string>../../TestCCBProject/Resources/game_res/480_320</string>
 	<key>publishToZipFile</key>
 	<false/>
 	<key>resourcePaths</key>
-	<array>
-		<dict>
-			<key>path</key>
-			<string>ccb</string>
-		</dict>
-		<dict>
-			<key>path</key>
-			<string>picture/480_320</string>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>

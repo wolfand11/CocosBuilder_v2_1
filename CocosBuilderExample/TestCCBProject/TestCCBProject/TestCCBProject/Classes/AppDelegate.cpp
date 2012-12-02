@@ -32,28 +32,53 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     CCSize screenSize = CCEGLView::sharedOpenGLView()->getFrameSize();
     
-    CCSize designSize = CCSizeMake(480, 320);
+    CCSize designSize = CCSizeMake(1.0f, 1.0f);
+    CCSize resourceSize = CCSizeMake(1.0f, 1.0f);
     
-    if (screenSize.width == 480)
+    // 方案一：每一个分辨率出一份资源
+//    if (screenSize.width == 480)
+//    {
+//        resourceSize = CCSizeMake(480, 320);
+//        designSize = CCSizeMake(480, 320);
+//        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/480_320");
+//        pDirector->setContentScaleFactor(resourceSize.height/designSize.height);
+//    }
+
+    if (screenSize.width == 960 || screenSize.width == 1136)
     {
-        CCSize resourceSize = CCSizeMake(480, 320);
-        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/picture/480_320");
-        pDirector->setContentScaleFactor(resourceSize.height/designSize.height);
+        resourceSize = screenSize;
+        designSize = screenSize;
+        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/960_640");
+        pDirector->setContentScaleFactor(1.0f);
     }
-    else if (screenSize.width == 960 ||
-             screenSize.width == 1136)
+    else if (screenSize.width == 1024 ||
+             screenSize.width == 2048)
     {
-        CCSize resourceSize = CCSizeMake(960, 640);
-        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/picture/960_640");
-        pDirector->setContentScaleFactor(resourceSize.height/designSize.height);
+        resourceSize = designSize = screenSize;
+        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/1024_768");
+        pDirector->setContentScaleFactor(1.0f);
     }
+    // 方案二：比例相同的使用同一份资源，对显示的内容进行缩放
     else
     {
-        CCSize resourceSize = CCSizeMake(960, 640);
-        CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/picture/960_640");
-        pDirector->setContentScaleFactor(resourceSize.height/designSize.height);
+        if (screenSize.width*2 == screenSize.height*3)
+        {
+            designSize = CCSizeMake(960, 640);
+            CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/960_640");
+            pDirector->setContentScaleFactor(screenSize.height/designSize.height);
+        }
+        else if (screenSize.width*3 == screenSize.height*4)
+        {
+            designSize = CCSizeMake(1024, 768);
+            CCFileUtils::sharedFileUtils()->setResourceDirectory("game_res/1024_768");
+            pDirector->setContentScaleFactor(screenSize.height/designSize.height);
+        }
+        else
+        {
+            CCLOG("unsupport screenSize:(w-%f,h-%f)",screenSize.width,screenSize.height);
+        }
     }
-    
+    CCLOG("current designSize:(w-%f,h-%f)",designSize.width,designSize.height);
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionNoBorder);
 
     // turn on display FPS
@@ -71,10 +96,11 @@ bool AppDelegate::applicationDidFinishLaunching()
     /* Create an autorelease CCBReader. */
     cocos2d::extension::CCBReader * ccbReader = new cocos2d::extension::CCBReader(ccNodeLoaderLibrary);
     
-    CCScene *pScene = ccbReader->createSceneWithNodeGraphFromFile("game_res/ccb/Test.ccbi");
+    CCScene *pScene = ccbReader->createSceneWithNodeGraphFromFile("ccb/Test.ccbi");
     
     CCSprite* sprite = CCSprite::create("Icon.png");
-    sprite->setPosition(ccp(240,160));
+    sprite->setAnchorPoint(ccp(0, 0));
+    sprite->setPosition(ccp(0,0));
     pScene->addChild(sprite,10);
     
     ccbReader->release();

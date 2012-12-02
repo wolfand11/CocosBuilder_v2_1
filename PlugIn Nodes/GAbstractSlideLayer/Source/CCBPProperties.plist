@@ -38,9 +38,9 @@
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
-			<string>SpeedDecreaseFactor</string>
-			<key>displayName</key>
 			<string>speedDecreaseFactor</string>
+			<key>displayName</key>
+			<string>SpeedDecreaseFactor</string>
 		</dict>
 	</array>
 </dict>

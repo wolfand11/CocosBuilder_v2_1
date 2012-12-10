@@ -10,5 +10,9 @@
 	<string>GTab</string>
 	<key>editorClassName</key>
 	<string>GTab</string>
+	<key>requireChildClass</key>
+	<array>
+		<string>CCMenuItemImage</string>
+	</array>
 </dict>
 </plist>

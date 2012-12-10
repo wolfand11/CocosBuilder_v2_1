@@ -1604,9 +1604,16 @@ static BOOL hideAllToNextSeparator;
     NSString* requireParent = nodeInfo.plugIn.requireParentClass;
     if (requireParent && ![requireParent isEqualToString: nodeInfoParent.plugIn.nodeClassName])
     {
-        //[self modalDialogTitle:@"Failed to add item" message:[NSString stringWithFormat: @"A %@ must be added to a %@",nodeInfo.plugIn.nodeClassName, requireParent]];
-        self.errorDescription = [NSString stringWithFormat: @"A %@ must be added to a %@",nodeInfo.plugIn.nodeClassName, requireParent];
-        return NO;
+        if ( [requireParent isEqualToString:@"CCMenu"] && [nodeInfoParent.plugIn.nodeClassName isEqualToString:@"GTab"] )
+        {
+            //do nothing
+        }
+        else
+        {
+            //[self modalDialogTitle:@"Failed to add item" message:[NSString stringWithFormat: @"A %@ must be added to a %@",nodeInfo.plugIn.nodeClassName, requireParent]];
+            self.errorDescription = [NSString stringWithFormat: @"A %@ must be added to a %@",nodeInfo.plugIn.nodeClassName, requireParent];
+            return NO;
+        }
     }
     
     // Check if the parent require a specific type of children

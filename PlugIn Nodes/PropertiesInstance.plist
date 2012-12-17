@@ -57,6 +57,14 @@
 			<key>name</key>
 			<string>clipsToBounds</string>
 		</dict>
+		<dict>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>Anchor point</string>
+		</dict>
 	</array>
 </dict>
 </plist>

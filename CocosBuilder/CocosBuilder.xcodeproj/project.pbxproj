@@ -10,6 +10,7 @@
 		461B4E901665B61000AD2B8F /* GAbstractTouchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4E8F1665B61000AD2B8F /* GAbstractTouchLayer.m */; };
 		461B4E961665B66300AD2B8F /* GAbstractSlideLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4E951665B66300AD2B8F /* GAbstractSlideLayer.m */; };
 		46308809167F1D2600E85027 /* CCProgressTimer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */; };
+		46B626471681B351009A2FBD /* GList.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B626461681B351009A2FBD /* GList.m */; };
 		46C6F1D116761BC9002235E0 /* GActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C6F1D016761BC9002235E0 /* GActivityView.m */; };
 		46FD8F75165D3806009A896B /* none.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8F74165D3806009A896B /* none.png */; };
 		46FD8F80165D399D009A896B /* CCControlSliderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8F79165D399D009A896B /* CCControlSliderHelper.m */; };
@@ -754,6 +755,8 @@
 		46308806167F149100E85027 /* GCustomWidgetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCustomWidgetDefine.h; sourceTree = "<group>"; };
 		46308807167F1D2600E85027 /* CCProgressTimer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCProgressTimer+Helper.h"; sourceTree = "<group>"; };
 		46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCProgressTimer+Helper.m"; sourceTree = "<group>"; };
+		46B626451681B351009A2FBD /* GList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GList.h; sourceTree = "<group>"; };
+		46B626461681B351009A2FBD /* GList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GList.m; sourceTree = "<group>"; };
 		46C6F1CF16761BC9002235E0 /* GActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GActivityView.h; sourceTree = "<group>"; };
 		46C6F1D016761BC9002235E0 /* GActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GActivityView.m; sourceTree = "<group>"; };
 		46FD8F74165D3806009A896B /* none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = none.png; sourceTree = "<group>"; };
@@ -1788,6 +1791,8 @@
 				461B4E8F1665B61000AD2B8F /* GAbstractTouchLayer.m */,
 				461B4E941665B66200AD2B8F /* GAbstractSlideLayer.h */,
 				461B4E951665B66300AD2B8F /* GAbstractSlideLayer.m */,
+				46B626451681B351009A2FBD /* GList.h */,
+				46B626461681B351009A2FBD /* GList.m */,
 				46C6F1CF16761BC9002235E0 /* GActivityView.h */,
 				46C6F1D016761BC9002235E0 /* GActivityView.m */,
 				46308806167F149100E85027 /* GCustomWidgetDefine.h */,
@@ -4510,6 +4515,7 @@
 				461B4E961665B66300AD2B8F /* GAbstractSlideLayer.m in Sources */,
 				46C6F1D116761BC9002235E0 /* GActivityView.m in Sources */,
 				46308809167F1D2600E85027 /* CCProgressTimer+Helper.m in Sources */,
+				46B626471681B351009A2FBD /* GList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

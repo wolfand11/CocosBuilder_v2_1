@@ -23,6 +23,26 @@
 			<true/>
 		</dict>
 		<dict>
+			<key>readOnly</key>
+			<false/>
+			<key>displayName</key>
+			<string>SlideBoundOrigin</string>
+			<key>type</key>
+			<string>Position</string>
+			<key>name</key>
+			<string>slideBoundOrigin</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<false/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>slideBoundSize</string>
+			<key>displayName</key>
+			<string>SlideBoundSize</string>
+		</dict>
+		<dict>
 			<key>displayName</key>
 			<string>Direction</string>
 			<key>type</key>

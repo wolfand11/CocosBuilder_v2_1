@@ -25,19 +25,24 @@
 			<string>Horizontal|0|Vertical|1</string>
 		</dict>
 		<dict>
-			<key>default</key>
-			<array>
-				<integer>0</integer>
-				<integer>0</integer>
-			</array>
+			<key>readOnly</key>
+			<true/>
+			<key>displayName</key>
+			<string>SlideBoundOrigin</string>
+			<key>type</key>
+			<string>Position</string>
+			<key>name</key>
+			<string>slideBoundOrigin</string>
+		</dict>
+		<dict>
 			<key>readOnly</key>
 			<true/>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>
-			<string>contentSize</string>
+			<string>slideBoundSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>SlideBoundSize</string>
 		</dict>
 	</array>
 </dict>

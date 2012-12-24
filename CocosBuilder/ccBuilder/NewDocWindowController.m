@@ -39,10 +39,17 @@
 {
     // iOS resolutions
     ResolutionSetting* iPhoneLandscape = [ResolutionSetting settingIPhoneLandscape];
-    iPhoneLandscape.enabled = YES;
+    //iPhoneLandscape.enabled = YES;
+    ResolutionSetting* iPhoneLandscapeRetia = [ResolutionSetting settingIPhoneLandscapeRetina];
+    iPhoneLandscapeRetia.enabled = YES;
+    ResolutionSetting* iPhone5LandscapeRetia = [ResolutionSetting settingIPhone5LandscapeRetina];
+    iPhone5LandscapeRetia.enabled = YES;
+    
     [resolutionsController addObject:iPhoneLandscape];
+    [resolutionsController addObject:iPhoneLandscapeRetia];
     [resolutionsController addObject:[ResolutionSetting settingIPhonePortrait]];
     [resolutionsController addObject:[ResolutionSetting settingIPhone5Landscape]];
+    [resolutionsController addObject:iPhone5LandscapeRetia];
     [resolutionsController addObject:[ResolutionSetting settingIPhone5Portrait]];
     [resolutionsController addObject:[ResolutionSetting settingIPadLandscape]];
     [resolutionsController addObject:[ResolutionSetting settingIPadPortrait]];
@@ -101,6 +108,8 @@
 {
     if ([rot isEqualToString:@"CCNode"]) return YES;
     else if ([rot isEqualToString:@"CCLayer"]) return YES;
+    else if ([rot isEqualToString:@"GAbstractTouchLayer"]) return YES;
+    else if ([rot isEqualToString:@"GAbstractSlideLayer"]) return YES;
     else return NO;
 }
 

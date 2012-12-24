@@ -130,6 +130,16 @@
     return setting;
 }
 
++ (ResolutionSetting*) settingIPhoneLandscapeRetina
+{
+    ResolutionSetting* setting = [ResolutionSetting settingIPhoneLandscape];
+    setting.name = @"iPhone Landscape Retina";
+    setting.width *= 2;
+    setting.height *= 2;
+    
+    return setting;
+}
+
 + (ResolutionSetting*) settingIPhonePortrait
 {
     ResolutionSetting* setting = [self settingIPhone];
@@ -148,6 +158,16 @@
     setting.name = @"iPhone 5 Landscape";
     setting.width = 568;
     setting.height = 320;
+    
+    return setting;
+}
+
++ (ResolutionSetting*) settingIPhone5LandscapeRetina
+{
+    ResolutionSetting* setting = [ResolutionSetting settingIPhone5Landscape];
+    setting.name = @"iPhone5 Landscape Retina";
+    setting.width *= 2;
+    setting.height *= 2;
     
     return setting;
 }

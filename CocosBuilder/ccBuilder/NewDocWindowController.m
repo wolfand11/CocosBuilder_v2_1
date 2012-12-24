@@ -110,7 +110,7 @@
     else if ([rot isEqualToString:@"CCLayer"]) return YES;
     else if ([rot isEqualToString:@"GAbstractTouchLayer"]) return YES;
     else if ([rot isEqualToString:@"GAbstractSlideLayer"]) return YES;
-    else return NO;
+    else return YES;
 }
 
 - (void) setRootObjectType:(NSString *)rot

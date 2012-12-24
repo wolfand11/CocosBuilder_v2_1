@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>inheritsFrom</key>
+	<string>CCLayer</string>
+	<key>canBeRootNode</key>
+	<true/>
+	<key>canHaveChildren</key>
+	<string>YES</string>
+	<key>className</key>
+	<string>GAbstractTouchLayer</string>
+	<key>editorClassName</key>
+	<string>GAbstractTouchLayer</string>
 	<key>properties</key>
 	<array>
 		<dict>

@@ -4,6 +4,8 @@
 <dict>
 	<key>inheritsFrom</key>
 	<string>GAbstractTouchLayer</string>
+	<key>canBeRootNode</key>
+	<true/>
 	<key>canHaveChildren</key>
 	<string>YES</string>
 	<key>className</key>

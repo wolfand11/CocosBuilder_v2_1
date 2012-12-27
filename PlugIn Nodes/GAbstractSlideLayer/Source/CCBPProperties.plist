@@ -60,9 +60,19 @@
 			<key>type</key>
 			<string>Float</string>
 			<key>name</key>
-			<string>speedDecreaseFactor</string>
+			<string>friction</string>
 			<key>displayName</key>
-			<string>SpeedDecreaseFactor</string>
+			<string>Friction</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<real>5.1</real>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>mass</string>
+			<key>displayName</key>
+			<string>Mass</string>
 		</dict>
 	</array>
 </dict>

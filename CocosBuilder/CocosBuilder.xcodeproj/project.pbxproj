@@ -10,7 +10,7 @@
 		461B4E901665B61000AD2B8F /* GAbstractTouchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4E8F1665B61000AD2B8F /* GAbstractTouchLayer.m */; };
 		461B4E961665B66300AD2B8F /* GAbstractSlideLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4E951665B66300AD2B8F /* GAbstractSlideLayer.m */; };
 		46308809167F1D2600E85027 /* CCProgressTimer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */; };
-		46384A2116883FCD00E916C3 /* GAbstractTouchableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 46384A2016883FCD00E916C3 /* GAbstractTouchableItem.m */; };
+		4635E966168D71AB0043FFA0 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E965168D71AB0043FFA0 /* GAbstractContainerItem.m */; };
 		463E7E4B168C12A500E764E6 /* GAbstractLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E7E4A168C12A500E764E6 /* GAbstractLayout.m */; };
 		463E7E4E168C141A00E764E6 /* GNormalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E7E4D168C141A00E764E6 /* GNormalLayout.m */; };
 		46B626471681B351009A2FBD /* GAbstractSlideContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B626461681B351009A2FBD /* GAbstractSlideContainer.m */; };
@@ -758,8 +758,8 @@
 		46308806167F149100E85027 /* GCustomWidgetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCustomWidgetDefine.h; sourceTree = "<group>"; };
 		46308807167F1D2600E85027 /* CCProgressTimer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCProgressTimer+Helper.h"; sourceTree = "<group>"; };
 		46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCProgressTimer+Helper.m"; sourceTree = "<group>"; };
-		46384A1F16883FCD00E916C3 /* GAbstractTouchableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractTouchableItem.h; sourceTree = "<group>"; };
-		46384A2016883FCD00E916C3 /* GAbstractTouchableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractTouchableItem.m; sourceTree = "<group>"; };
+		4635E964168D71AB0043FFA0 /* GAbstractContainerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractContainerItem.h; sourceTree = "<group>"; };
+		4635E965168D71AB0043FFA0 /* GAbstractContainerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractContainerItem.m; sourceTree = "<group>"; };
 		463E7E49168C12A500E764E6 /* GAbstractLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractLayout.h; sourceTree = "<group>"; };
 		463E7E4A168C12A500E764E6 /* GAbstractLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractLayout.m; sourceTree = "<group>"; };
 		463E7E4C168C141A00E764E6 /* GNormalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNormalLayout.h; sourceTree = "<group>"; };
@@ -1802,13 +1802,13 @@
 				461B4E951665B66300AD2B8F /* GAbstractSlideLayer.m */,
 				46B626451681B351009A2FBD /* GAbstractSlideContainer.h */,
 				46B626461681B351009A2FBD /* GAbstractSlideContainer.m */,
+				4635E964168D71AB0043FFA0 /* GAbstractContainerItem.h */,
+				4635E965168D71AB0043FFA0 /* GAbstractContainerItem.m */,
 				46C6F1CF16761BC9002235E0 /* GActivityView.h */,
 				46C6F1D016761BC9002235E0 /* GActivityView.m */,
 				46308806167F149100E85027 /* GCustomWidgetDefine.h */,
 				46308807167F1D2600E85027 /* CCProgressTimer+Helper.h */,
 				46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */,
-				46384A1F16883FCD00E916C3 /* GAbstractTouchableItem.h */,
-				46384A2016883FCD00E916C3 /* GAbstractTouchableItem.m */,
 				463E7E49168C12A500E764E6 /* GAbstractLayout.h */,
 				463E7E4A168C12A500E764E6 /* GAbstractLayout.m */,
 				463E7E4C168C141A00E764E6 /* GNormalLayout.h */,
@@ -4531,9 +4531,9 @@
 				46C6F1D116761BC9002235E0 /* GActivityView.m in Sources */,
 				46308809167F1D2600E85027 /* CCProgressTimer+Helper.m in Sources */,
 				46B626471681B351009A2FBD /* GAbstractSlideContainer.m in Sources */,
-				46384A2116883FCD00E916C3 /* GAbstractTouchableItem.m in Sources */,
 				463E7E4B168C12A500E764E6 /* GAbstractLayout.m in Sources */,
 				463E7E4E168C141A00E764E6 /* GNormalLayout.m in Sources */,
+				4635E966168D71AB0043FFA0 /* GAbstractContainerItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,40 +9,33 @@
 	<key>canHaveChildren</key>
 	<string>YES</string>
 	<key>className</key>
-	<string>GAbstractTouchLayer</string>
+	<string>GAbstractContainerItem</string>
 	<key>editorClassName</key>
-	<string>GAbstractTouchLayer</string>
+	<string>GAbstractContainerItem</string>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>name</key>
-			<string>GAbstractSlideLayer</string>
+			<string>GAbstractContainerItem</string>
 			<key>displayName</key>
-			<string>GAbstractSlideLayer</string>
+			<string>GAbstractContainerItem</string>
 			<key>type</key>
 			<string>Separator</string>
 			<key>dontSetInEditor</key>
 			<true/>
 		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
 		<dict>
-			<key>displayName</key>
-			<string>Direction</string>
+			<key>readOnly</key>
+			<true/>
 			<key>type</key>
-			<string>IntegerLabeled</string>
+			<string>Check</string>
 			<key>name</key>
-			<string>direction</string>
-			<key>extra</key>
-			<string>Horizontal|0|Vertical|1|Both|2</string>
-		</dict>
-		<dict>
-			<key>default</key>
-			<real>1.2</real>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>scale</string>
+			<string>ignoreAnchorPointForPosition</string>
 			<key>displayName</key>
-			<string>Scale</string>
+			<string>Ignore anchor point</string>
 		</dict>
 		<dict>
 			<key>default</key>
@@ -59,16 +52,6 @@
 		</dict>
 		<dict>
 			<key>default</key>
-			<true/>
-			<key>displayName</key>
-			<string>Clips to bounds</string>
-			<key>type</key>
-			<string>Check</string>
-			<key>name</key>
-			<string>clipsToBounds</string>
-		</dict>
-		<dict>
-			<key>default</key>
 			<array>
 				<real>0</real>
 				<integer>0</integer>
@@ -79,19 +62,6 @@
 			<string>anchorPoint</string>
 			<key>displayName</key>
 			<string>Anchor point</string>
-		</dict>
-	</array>
-	<key>propertiesOverridden</key>
-	<array>
-		<dict>
-			<key>readOnly</key>
-			<true/>
-			<key>type</key>
-			<string>Check</string>
-			<key>name</key>
-			<string>ignoreAnchorPointForPosition</string>
-			<key>displayName</key>
-			<string>Ignore anchor point</string>
 		</dict>
 	</array>
 </dict>

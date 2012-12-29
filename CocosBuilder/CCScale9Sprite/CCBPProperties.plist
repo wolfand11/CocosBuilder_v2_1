@@ -13,10 +13,27 @@
 	<key>propertiesOverridden</key>
 	<array>
 		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>default</key>
+			<real>1</real>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>scale</string>
+			<key>displayName</key>
+			<string>Scale</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<string>0.5</string>
+				<string>0.5</string>
+			</array>
 			<key>defaultSerialization</key>
 			<array>
-				<integer>0</integer>
-				<integer>0</integer>
+				<real>0.5</real>
+				<real>0.5</real>
 			</array>
 			<key>type</key>
 			<string>Point</string>
@@ -24,14 +41,6 @@
 			<string>anchorPoint</string>
 			<key>displayName</key>
 			<string>Anchor point</string>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>Size</string>
-			<key>name</key>
-			<string>contentSize</string>
-			<key>displayName</key>
-			<string>Content size</string>
 		</dict>
 	</array>
 	<key>properties</key>
@@ -69,18 +78,6 @@
 			<string>SpriteFrame</string>
 			<key>name</key>
 			<string>spriteFrame</string>
-		</dict>
-		<dict>
-			<key>affectsProperties</key>
-			<array>
-				<string>contentSize</string>
-			</array>
-			<key>type</key>
-			<string>Size</string>
-			<key>name</key>
-			<string>preferedSize</string>
-			<key>displayName</key>
-			<string>Preferred size</string>
 		</dict>
 		<dict>
 			<key>animatable</key>

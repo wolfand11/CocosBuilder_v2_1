@@ -4,46 +4,27 @@
 <dict>
 	<key>inheritsFrom</key>
 	<string>CCLayer</string>
-	<key>canBeRootNode</key>
-	<true/>
 	<key>canHaveChildren</key>
 	<string>YES</string>
 	<key>className</key>
-	<string>GAbstractTouchLayer</string>
+	<string>GEasySlideContainer</string>
 	<key>editorClassName</key>
-	<string>GAbstractTouchLayer</string>
+	<string>GEasySlideContainer</string>
 	<key>properties</key>
 	<array>
 		<dict>
 			<key>name</key>
-			<string>GAbstractSlideLayer</string>
+			<string>GEasySlideContainer</string>
 			<key>displayName</key>
-			<string>GAbstractSlideLayer</string>
+			<string>GEasySlideContainer</string>
 			<key>type</key>
 			<string>Separator</string>
 			<key>dontSetInEditor</key>
 			<true/>
 		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Direction</string>
-			<key>type</key>
-			<string>IntegerLabeled</string>
-			<key>name</key>
-			<string>direction</string>
-			<key>extra</key>
-			<string>Horizontal|0|Vertical|1|Both|2</string>
-		</dict>
-		<dict>
-			<key>default</key>
-			<real>1.2</real>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>scale</string>
-			<key>displayName</key>
-			<string>Scale</string>
-		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
 		<dict>
 			<key>default</key>
 			<array>
@@ -58,26 +39,14 @@
 			<string>Content size</string>
 		</dict>
 		<dict>
-			<key>default</key>
-			<true/>
-			<key>displayName</key>
-			<string>Clips to bounds</string>
-			<key>type</key>
-			<string>Check</string>
-			<key>name</key>
-			<string>clipsToBounds</string>
-		</dict>
-		<dict>
-			<key>defaultSerialization</key>
-			<integer>0</integer>
-			<key>animatable</key>
+			<key>readOnly</key>
 			<true/>
 			<key>type</key>
-			<string>Degrees</string>
+			<string>Float</string>
 			<key>name</key>
-			<string>rotation</string>
+			<string>scale</string>
 			<key>displayName</key>
-			<string>Rotation</string>
+			<string>Scale</string>
 		</dict>
 		<dict>
 			<key>default</key>
@@ -92,18 +61,19 @@
 			<key>displayName</key>
 			<string>Anchor point</string>
 		</dict>
-	</array>
-	<key>propertiesOverridden</key>
-	<array>
 		<dict>
 			<key>readOnly</key>
 			<true/>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>animatable</key>
+			<true/>
 			<key>type</key>
-			<string>Check</string>
+			<string>Degrees</string>
 			<key>name</key>
-			<string>ignoreAnchorPointForPosition</string>
+			<string>rotation</string>
 			<key>displayName</key>
-			<string>Ignore anchor point</string>
+			<string>Rotation</string>
 		</dict>
 	</array>
 </dict>

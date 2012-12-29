@@ -26,8 +26,6 @@
 			<string>Anchor point</string>
 		</dict>
 		<dict>
-			<key>readOnly</key>
-			<true/>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>

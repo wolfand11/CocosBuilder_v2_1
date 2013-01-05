@@ -63,6 +63,16 @@
 			<string>itemHeight</string>
 		</dict>
 		<dict>
+			<key>default</key>
+			<integer>20</integer>
+			<key>displayName</key>
+			<string>Start Char</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>name</key>
+			<string>startChar</string>
+		</dict>
+		<dict>
 			<key>affectsProperties</key>
 			<array>
 				<string>contentSize</string>

@@ -30,7 +30,7 @@
 			<key>name</key>
 			<string>layoutDirection</string>
 			<key>extra</key>
-			<string>Horizontal|0|Vertical</string>
+			<string>Horizontal|0|Vertical|1</string>
 		</dict>
 	</array>
 </dict>

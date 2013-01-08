@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		461B4E901665B61000AD2B8F /* GAbstractTouchLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4E8F1665B61000AD2B8F /* GAbstractTouchLayer.m */; };
 		461B4E961665B66300AD2B8F /* GAbstractSlideLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B4E951665B66300AD2B8F /* GAbstractSlideLayer.m */; };
+		46231D35169C760100B55D53 /* GCCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 46231D34169C760100B55D53 /* GCCScale9Sprite.m */; };
 		46308809167F1D2600E85027 /* CCProgressTimer+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */; };
 		4635E966168D71AB0043FFA0 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E965168D71AB0043FFA0 /* GAbstractContainerItem.m */; };
 		463E7E4B168C12A500E764E6 /* GAbstractLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E7E4A168C12A500E764E6 /* GAbstractLayout.m */; };
@@ -757,6 +758,8 @@
 		461B4E8F1665B61000AD2B8F /* GAbstractTouchLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractTouchLayer.m; sourceTree = "<group>"; };
 		461B4E941665B66200AD2B8F /* GAbstractSlideLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractSlideLayer.h; sourceTree = "<group>"; };
 		461B4E951665B66300AD2B8F /* GAbstractSlideLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractSlideLayer.m; sourceTree = "<group>"; };
+		46231D33169C760100B55D53 /* GCCScale9Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCScale9Sprite.h; sourceTree = "<group>"; };
+		46231D34169C760100B55D53 /* GCCScale9Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCScale9Sprite.m; sourceTree = "<group>"; };
 		46308806167F149100E85027 /* GCustomWidgetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCustomWidgetDefine.h; sourceTree = "<group>"; };
 		46308807167F1D2600E85027 /* CCProgressTimer+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCProgressTimer+Helper.h"; sourceTree = "<group>"; };
 		46308808167F1D2600E85027 /* CCProgressTimer+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCProgressTimer+Helper.m"; sourceTree = "<group>"; };
@@ -1823,6 +1826,8 @@
 				463E7E4A168C12A500E764E6 /* GAbstractLayout.m */,
 				463E7E4C168C141A00E764E6 /* GNormalLayout.h */,
 				463E7E4D168C141A00E764E6 /* GNormalLayout.m */,
+				46231D33169C760100B55D53 /* GCCScale9Sprite.h */,
+				46231D34169C760100B55D53 /* GCCScale9Sprite.m */,
 			);
 			path = CustomWidget;
 			sourceTree = "<group>";
@@ -4546,6 +4551,7 @@
 				4635E966168D71AB0043FFA0 /* GAbstractContainerItem.m in Sources */,
 				46F3AEF41698660700A18E81 /* GCCLabelAtlas.m in Sources */,
 				46F3AEF51698660700A18E81 /* GTab.m in Sources */,
+				46231D35169C760100B55D53 /* GCCScale9Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

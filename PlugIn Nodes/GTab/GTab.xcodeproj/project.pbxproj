@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46AD585216689F0E00FE9372 /* GTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AD585116689F0E00FE9372 /* GTab.m */; };
 		E3DEFB1414FFD66C00B98586 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DEFB1314FFD66C00B98586 /* Cocoa.framework */; };
 		E3DEFB1E14FFD66C00B98586 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3DEFB1C14FFD66C00B98586 /* InfoPlist.strings */; };
 		E3DEFC5814FFDB7E00B98586 /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3DEFC5714FFDB7E00B98586 /* CCBPProperties.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46AD585016689F0E00FE9372 /* GTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTab.h; sourceTree = "<group>"; };
-		46AD585116689F0E00FE9372 /* GTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTab.m; sourceTree = "<group>"; };
 		E3DEFB1014FFD66C00B98586 /* GTab.ccbPlugNode */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTab.ccbPlugNode; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DEFB1314FFD66C00B98586 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E3DEFB1614FFD66C00B98586 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -184,8 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				E3DEFB1A14FFD66C00B98586 /* Supporting Files */,
-				46AD585016689F0E00FE9372 /* GTab.h */,
-				46AD585116689F0E00FE9372 /* GTab.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -464,7 +459,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46AD585216689F0E00FE9372 /* GTab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

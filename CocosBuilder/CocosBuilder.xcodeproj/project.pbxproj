@@ -14,6 +14,7 @@
 		4635E966168D71AB0043FFA0 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4635E965168D71AB0043FFA0 /* GAbstractContainerItem.m */; };
 		463E7E4B168C12A500E764E6 /* GAbstractLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E7E4A168C12A500E764E6 /* GAbstractLayout.m */; };
 		463E7E4E168C141A00E764E6 /* GNormalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463E7E4D168C141A00E764E6 /* GNormalLayout.m */; };
+		46A2639D16A3F60D00787432 /* GConfigLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A2639C16A3F60D00787432 /* GConfigLayout.m */; };
 		46B626471681B351009A2FBD /* GAbstractSlideContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B626461681B351009A2FBD /* GAbstractSlideContainer.m */; };
 		46C6F1D116761BC9002235E0 /* GActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C6F1D016761BC9002235E0 /* GActivityView.m */; };
 		46F3AEF41698660700A18E81 /* GCCLabelAtlas.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F3AEF11698660700A18E81 /* GCCLabelAtlas.m */; };
@@ -769,6 +770,8 @@
 		463E7E4A168C12A500E764E6 /* GAbstractLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractLayout.m; sourceTree = "<group>"; };
 		463E7E4C168C141A00E764E6 /* GNormalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNormalLayout.h; sourceTree = "<group>"; };
 		463E7E4D168C141A00E764E6 /* GNormalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNormalLayout.m; sourceTree = "<group>"; };
+		46A2639B16A3F60D00787432 /* GConfigLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GConfigLayout.h; sourceTree = "<group>"; };
+		46A2639C16A3F60D00787432 /* GConfigLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GConfigLayout.m; sourceTree = "<group>"; };
 		46B626451681B351009A2FBD /* GAbstractSlideContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractSlideContainer.h; sourceTree = "<group>"; };
 		46B626461681B351009A2FBD /* GAbstractSlideContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractSlideContainer.m; sourceTree = "<group>"; };
 		46C6F1CF16761BC9002235E0 /* GActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GActivityView.h; sourceTree = "<group>"; };
@@ -1826,6 +1829,8 @@
 				463E7E4A168C12A500E764E6 /* GAbstractLayout.m */,
 				463E7E4C168C141A00E764E6 /* GNormalLayout.h */,
 				463E7E4D168C141A00E764E6 /* GNormalLayout.m */,
+				46A2639B16A3F60D00787432 /* GConfigLayout.h */,
+				46A2639C16A3F60D00787432 /* GConfigLayout.m */,
 				46231D33169C760100B55D53 /* GCCScale9Sprite.h */,
 				46231D34169C760100B55D53 /* GCCScale9Sprite.m */,
 			);
@@ -4552,6 +4557,7 @@
 				46F3AEF41698660700A18E81 /* GCCLabelAtlas.m in Sources */,
 				46F3AEF51698660700A18E81 /* GTab.m in Sources */,
 				46231D35169C760100B55D53 /* GCCScale9Sprite.m in Sources */,
+				46A2639D16A3F60D00787432 /* GConfigLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

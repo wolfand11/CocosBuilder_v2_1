@@ -737,7 +737,7 @@
         else if ([prop isEqualToString:@"scale"]) return YES;
         else if ([prop isEqualToString:@"rotation"]) return YES;
         else if ([prop isEqualToString:@"tag"]) return YES;
-        else if ([prop isEqualToString:@"visible"]) return YES;
+        //else if ([prop isEqualToString:@"visible"]) return YES;
     }
     
     return NO;

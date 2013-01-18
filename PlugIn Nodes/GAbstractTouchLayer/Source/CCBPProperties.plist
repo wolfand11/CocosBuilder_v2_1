@@ -45,23 +45,5 @@
 			<string>TouchRectSize</string>
 		</dict>
 	</array>
-	<key>propertiesOverridden</key>
-	<array>
-		<dict>
-			<key>default</key>
-			<array>
-				<integer>0</integer>
-				<integer>0</integer>
-			</array>
-			<key>readOnly</key>
-			<true/>
-			<key>type</key>
-			<string>Size</string>
-			<key>name</key>
-			<string>contentSize</string>
-			<key>displayName</key>
-			<string>Content size</string>
-		</dict>
-	</array>
 </dict>
 </plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>inheritsFrom</key>
-	<string>CCLayer</string>
+	<string>GLayerPropertyExtension</string>
 	<key>canBeRootNode</key>
 	<true/>
 	<key>canHaveChildren</key>
@@ -23,16 +23,6 @@
 			<string>Separator</string>
 			<key>dontSetInEditor</key>
 			<true/>
-		</dict>
-		<dict>
-			<key>default</key>
-			<true/>
-			<key>displayName</key>
-			<string>IsSwallowTouchs</string>
-			<key>type</key>
-			<string>Check</string>
-			<key>name</key>
-			<string>isSwallowTouchs</string>
 		</dict>
 	</array>
 </dict>

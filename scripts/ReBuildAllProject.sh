@@ -1,4 +1,5 @@
 #!/bin/sh
+HOMEPATH=$(cd "$(dirname "$0")"; pwd)
 
 # Remove build directory
 cd ..
@@ -10,7 +11,8 @@ xcodebuild -alltargets clean
 xcodebuild -target CocosBuilder -configuration Debug build
 
 # Clean and build Plugins
-PLUGINSPATH="PlugIn Nodes/"
+cd "$HOMEPATH"
+PLUGINSPATH="../PlugIn Nodes/"
 cd "$PLUGINSPATH"
 for pluginDirName in $(ls .)
 do
@@ -19,17 +21,9 @@ do
 	cd "$pluginDirName"
 	if test -d $(ls -d *.xcodeproj)
 	    then
-	    echo "Has xcodeproj"
+	    xcodebuild -configuration Debug build    
 	fi
-	
-	for pluginProject in $(ls -d *.xcodeproj)
-	do
-	    if test -d $pluginProject
-	    then
-		xcodebuild -configuration Debug build
-	    fi
-	done
-	cd ..
+       	cd ..
     fi
 done
 

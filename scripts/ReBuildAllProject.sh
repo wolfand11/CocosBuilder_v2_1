@@ -10,14 +10,19 @@ xcodebuild -alltargets clean
 xcodebuild -target CocosBuilder -configuration Debug build
 
 # Clean and build Plugins
-PLUGINSPATH="../PlugIn Nodes/"
+PLUGINSPATH="PlugIn Nodes/"
 cd "$PLUGINSPATH"
 for pluginDirName in $(ls .)
 do
     if test -d "$pluginDirName"
     then
 	cd "$pluginDirName"
-	for pluginProject in $(ls *.xcodeproj)
+	if test -d $(ls -d *.xcodeproj)
+	    then
+	    echo "Has xcodeproj"
+	fi
+	
+	for pluginProject in $(ls -d *.xcodeproj)
 	do
 	    if test -d $pluginProject
 	    then

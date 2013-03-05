@@ -22,6 +22,16 @@
 			<key>dontSetInEditor</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Direction</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>direction</string>
+			<key>extra</key>
+			<string>Horizontal|0|Vertical|1</string>
+		</dict>
 	</array>
 	<key>propertiesOverridden</key>
 	<array>
@@ -36,7 +46,7 @@
 			<key>name</key>
 			<string>contentSize</string>
 			<key>displayName</key>
-			<string>Content size</string>
+			<string>TouchRect Size</string>
 		</dict>
 		<dict>
 			<key>readOnly</key>
@@ -49,11 +59,8 @@
 			<string>Scale</string>
 		</dict>
 		<dict>
-			<key>default</key>
-			<array>
-				<real>0</real>
-				<integer>0</integer>
-			</array>
+			<key>readOnly</key>
+			<true/>
 			<key>type</key>
 			<string>Point</string>
 			<key>name</key>
@@ -74,6 +81,16 @@
 			<string>rotation</string>
 			<key>displayName</key>
 			<string>Rotation</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Check</string>
+			<key>name</key>
+			<string>ignoreAnchorPointForPosition</string>
+			<key>displayName</key>
+			<string>Ignore anchor point</string>
 		</dict>
 	</array>
 </dict>

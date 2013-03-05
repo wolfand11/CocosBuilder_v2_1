@@ -8,6 +8,16 @@
 
 #import "cocos2d.h"
 
-@interface GEasySlideContainer : CCLayer
+typedef enum
+{
+    kSlideDirection_Horizental,
+    kSlideDirection_Vertical,
+    kSlideDirection_Any
+}ESlideDirection;
 
+@interface GEasySlideContainer : CCLayer
+{
+    ESlideDirection direction;
+}
+@property(readwrite,nonatomic,assign)ESlideDirection direction;
 @end

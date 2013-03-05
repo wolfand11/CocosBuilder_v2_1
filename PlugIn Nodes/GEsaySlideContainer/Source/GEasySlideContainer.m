@@ -9,5 +9,5 @@
 #import "GEasySlideContainer.h"
 
 @implementation GEasySlideContainer
-
+@synthesize direction;
 @end

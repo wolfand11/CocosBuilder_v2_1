@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4647C52016E9CB5300FAC061 /* GAsyncCCBFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4647C51F16E9CB5300FAC061 /* GAsyncCCBFile.m */; };
 		4664D8AD16AA70600067A533 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4664D88316AA70600067A533 /* GAbstractContainerItem.m */; };
 		4664D8AE16AA70600067A533 /* GAbstractLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4664D88516AA70600067A533 /* GAbstractLayer.m */; };
 		4664D8AF16AA70600067A533 /* GAbstractSlideContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4664D88716AA70600067A533 /* GAbstractSlideContainer.m */; };
@@ -757,6 +758,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4647C51E16E9CB5300FAC061 /* GAsyncCCBFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAsyncCCBFile.h; sourceTree = "<group>"; };
+		4647C51F16E9CB5300FAC061 /* GAsyncCCBFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAsyncCCBFile.m; sourceTree = "<group>"; };
 		4664D88216AA70600067A533 /* GAbstractContainerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractContainerItem.h; sourceTree = "<group>"; };
 		4664D88316AA70600067A533 /* GAbstractContainerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractContainerItem.m; sourceTree = "<group>"; };
 		4664D88416AA70600067A533 /* GAbstractLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractLayer.h; sourceTree = "<group>"; };
@@ -1863,6 +1866,8 @@
 		4664D89A16AA70600067A533 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				4647C51E16E9CB5300FAC061 /* GAsyncCCBFile.h */,
+				4647C51F16E9CB5300FAC061 /* GAsyncCCBFile.m */,
 				4664D89B16AA70600067A533 /* CCControlSliderHelper.h */,
 				4664D89C16AA70600067A533 /* CCControlSliderHelper.m */,
 				4664D89D16AA70600067A533 /* CCEditBox.h */,
@@ -4604,6 +4609,7 @@
 				4664D8BC16AA70600067A533 /* GCCLabelAtlas.m in Sources */,
 				4664D8BD16AA70600067A533 /* GCCScale9Sprite.m in Sources */,
 				4664D8BE16AA70600067A533 /* GTab.m in Sources */,
+				4647C52016E9CB5300FAC061 /* GAsyncCCBFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

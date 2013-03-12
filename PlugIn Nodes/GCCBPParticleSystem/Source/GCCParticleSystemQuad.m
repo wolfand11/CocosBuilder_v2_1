@@ -22,9 +22,9 @@
  * THE SOFTWARE.
  */
 
-#import "GCCBPParticleSystem.h"
+#import "GCCParticleSystemQuad.h"
 
-@implementation GCCBPParticleSystem
+@implementation GCCParticleSystemQuad
 @synthesize start;
 
 - (id) init
@@ -33,7 +33,7 @@
     if (!self) return NULL;
     
     self.positionType = kCCPositionTypeGrouped;
-    self.start = false;
+    self.start = true;
     
     return self;
 }

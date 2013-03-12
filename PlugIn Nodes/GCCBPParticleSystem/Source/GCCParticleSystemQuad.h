@@ -24,7 +24,7 @@
 
 #import "cocos2d.h"
 
-@interface GCCBPParticleSystem : CCParticleSystemQuad
+@interface GCCParticleSystemQuad : CCParticleSystemQuad
 {
     BOOL start;
 }

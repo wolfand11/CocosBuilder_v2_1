@@ -24,7 +24,7 @@
 		</dict>
 	</array>
 	<key>editorClassName</key>
-	<string>GCCBPParticleSystem</string>
+	<string>GCCParticleSystemQuad</string>
 	<key>properties</key>
 	<array>
 		<dict>
@@ -48,14 +48,6 @@
 			<string>start</string>
 			<key>displayName</key>
 			<string>Start Particles</string>
-		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Start Particles|Stop Particles</string>
-			<key>type</key>
-			<string>StartStop</string>
-			<key>extra</key>
-			<string>resetSystem|stopSystem</string>
 		</dict>
 		<dict>
 			<key>displayName</key>

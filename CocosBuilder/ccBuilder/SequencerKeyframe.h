@@ -30,13 +30,14 @@
 enum
 {
     kCCBKeyframeTypeUndefined,
-    kCCBKeyframeTypeVisible,
+    kCCBKeyframeTypeCheck,
     kCCBKeyframeTypeDegrees,
     kCCBKeyframeTypePosition,
     kCCBKeyframeTypeScaleLock,
     kCCBKeyframeTypeByte,
     kCCBKeyframeTypeColor3,
     kCCBKeyframeTypeSpriteFrame,
+    kCCBKeyframeTypeString
 };
 
 @interface SequencerKeyframe : NSObject

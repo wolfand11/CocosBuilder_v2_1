@@ -92,7 +92,7 @@
     }
     else if ([type isEqualToString:@"Check"])
     {
-        return kCCBKeyframeTypeVisible;
+        return kCCBKeyframeTypeCheck;
     }
     else if ([type isEqualToString:@"Byte"])
     {
@@ -105,6 +105,10 @@
     else if ([type isEqualToString:@"SpriteFrame"])
     {
         return kCCBKeyframeTypeSpriteFrame;
+    }
+    else if ([type isEqualToString:@"String"])
+    {
+        return kCCBKeyframeTypeString;
     }
     else
     {

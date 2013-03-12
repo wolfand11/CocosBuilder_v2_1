@@ -747,7 +747,7 @@
             // Write property type
             int kfType = [[prop objectForKey:@"type"] intValue];
             NSString* propType = NULL;
-            if (kfType == kCCBKeyframeTypeVisible) propType = @"Check";
+            if (kfType == kCCBKeyframeTypeCheck) propType = @"Check";
             else if (kfType == kCCBKeyframeTypeByte) propType = @"Byte";
             else if (kfType == kCCBKeyframeTypeColor3) propType = @"Color3";
             else if (kfType == kCCBKeyframeTypeDegrees) propType = @"Degrees";
@@ -762,9 +762,9 @@
             // Write number of keyframes
             NSArray* keyframes = [prop objectForKey:@"keyframes"];
             
-            if (kfType == kCCBKeyframeTypeVisible && keyframes.count > 0)
+            if (kfType == kCCBKeyframeTypeCheck && keyframes.count > 0)
             {
-                BOOL visible = YES;
+                BOOL check = YES;
                 NSDictionary* keyframeFirst = [keyframes objectAtIndex:0];
                 if ([[keyframeFirst objectForKey:@"time"] floatValue] != 0)
                 {
@@ -779,8 +779,8 @@
                 for (NSDictionary* keyframe in keyframes)
                 {
                     float time = [[keyframe objectForKey:@"time"] floatValue];
-                    [self writeKeyframeValue:[NSNumber numberWithBool:visible] type:propType time:time easingType:kCCBKeyframeEasingInstant easingOpt:0];
-                    visible = !visible;
+                    [self writeKeyframeValue:[NSNumber numberWithBool:check] type:propType time:time easingType:kCCBKeyframeEasingInstant easingOpt:0];
+                    check = !check;
                 }
                 
             }

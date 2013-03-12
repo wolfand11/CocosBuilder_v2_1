@@ -188,7 +188,7 @@
         keyframe.easing.type = kCCBKeyframeEasingInstant;
     }
     
-    if (keyframeType == kCCBKeyframeTypeVisible)
+    if (keyframeType == kCCBKeyframeTypeCheck)
     {
         // Values for visiblity keyframes are ignored (each keyframe toggles the state)
         keyframe.value = [NSNumber numberWithBool:YES];
@@ -278,9 +278,9 @@
                 [NSNumber numberWithFloat:y],
                 nil];
     }
-    else if (type == kCCBKeyframeTypeVisible)
+    else if (type == kCCBKeyframeTypeCheck)
     {
-        return [self valueForKey:@"visible"];
+        return [self valueForKey:name];
     }
     else if (type == kCCBKeyframeTypeColor3)
     {
@@ -329,7 +329,7 @@
         
         [PositionPropertySetter setScaledX:x Y:y type:type forNode:self prop:propName];
     }
-    else if (type == kCCBKeyframeTypeVisible)
+    else if (type == kCCBKeyframeTypeCheck)
     {
         [self setValue:value forKey:propName];
     }

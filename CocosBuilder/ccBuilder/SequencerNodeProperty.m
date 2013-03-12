@@ -202,7 +202,7 @@
         return NULL;
     }
     
-    if (numKeyframes == 1 && type == kCCBKeyframeTypeVisible)
+    if (numKeyframes == 1 && type == kCCBKeyframeTypeCheck)
     {
         SequencerKeyframe* keyframe = [keyframes objectAtIndex:0];
         return [NSNumber numberWithBool: (time >= keyframe.time)];
@@ -217,36 +217,36 @@
     SequencerKeyframe* keyframeFirst = [keyframes objectAtIndex:0];
     SequencerKeyframe* keyframeLast = [keyframes objectAtIndex:numKeyframes-1];
     
-    if (type == kCCBKeyframeTypeVisible)
+    if (type == kCCBKeyframeTypeCheck)
     {
         if (time < keyframeFirst.time)
         {
             return [NSNumber numberWithBool:NO];
         }
         
-        BOOL visible = YES;
+        BOOL check = YES;
         for (int i = 1; i < [keyframes count]; i++)
         {
             SequencerKeyframe* kf = [keyframes objectAtIndex:i];
             
-            if (visible)
+            if (check)
             {
                 if (time <= kf.time)
                 {
-                    return [NSNumber numberWithBool:visible];
+                    return [NSNumber numberWithBool:check];
                 }
             }
             else
             {
                 if (time < kf.time)
                 {
-                    return [NSNumber numberWithBool:visible];
+                    return [NSNumber numberWithBool:check];
                 }
             }
             
-            visible = !visible;
+            check = !check;
         }
-        return [NSNumber numberWithBool:visible];
+        return [NSNumber numberWithBool:check];
     }
     
     if (time <= keyframeFirst.time)
@@ -271,7 +271,7 @@
     SequencerKeyframe* keyframeEnd = [keyframes objectAtIndex:endFrameNum];
     
     // Skip interpolations for visiblity (special case)
-    if (type == kCCBKeyframeTypeVisible)
+    if (type == kCCBKeyframeTypeCheck)
     {
         BOOL val = (startFrameNum % 2 == 0);
         return [NSNumber numberWithBool:val];

@@ -40,9 +40,15 @@
 
 -(void) setStart:(BOOL)isStart
 {
+    if (start == isStart)
+    {
+        return;
+    }
+    
+    start = isStart;
     if (isStart)
     {
-        [self start];
+        [self resetSystem];
     }
     else
     {

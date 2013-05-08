@@ -38,6 +38,41 @@
     return self;
 }
 
+-(void) setBezierPosX:(float)bezierPosX
+{
+    if (_bezierPosX == bezierPosX)
+    {
+        return;
+    }
+    _bezierPosX = bezierPosX;
+    
+    CGPoint temp = self.position;
+    temp.x = bezierPosX;
+    [self setPosition:temp];
+}
+
+-(void) setBezierPosY:(float)bezierPosY
+{
+    if (_bezierPosY == bezierPosY)
+    {
+        return;
+    }
+    _bezierPosY = bezierPosY;
+    
+    CGPoint temp = self.position;
+    temp.y = bezierPosY;
+    [self setPosition:temp];
+}
+
+-(void) setBezierPosType:(int)bezierPosType
+{
+    if (_bezierPosType == bezierPosType)
+    {
+        return;
+    }
+    _bezierPosType = bezierPosType;
+}
+
 -(void) setStart:(BOOL)isStart
 {
     if (start == isStart)

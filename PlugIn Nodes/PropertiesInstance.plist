@@ -35,6 +35,18 @@
 			<string>Horizontal|0|Vertical|1|Both|2</string>
 		</dict>
 		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>animatable</key>
+			<true/>
+			<key>displayName</key>
+			<string>Position</string>
+			<key>type</key>
+			<string>Position</string>
+			<key>name</key>
+			<string>position</string>
+		</dict>
+		<dict>
 			<key>default</key>
 			<real>1.2</real>
 			<key>type</key>

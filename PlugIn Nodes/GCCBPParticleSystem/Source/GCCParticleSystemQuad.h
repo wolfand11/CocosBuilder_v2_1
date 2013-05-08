@@ -29,5 +29,10 @@
     BOOL start;
 }
 @property(readwrite,nonatomic,assign,setter = setStart:)BOOL start;
+@property(readwrite,nonatomic,assign)int   bezierPosType;
+@property(readwrite,nonatomic,assign)float bezierPosX;
+@property(readwrite,nonatomic,assign)float bezierPosY;
+@property(readwrite,nonatomic,assign)float bezierPosExX;
+@property(readwrite,nonatomic,assign)float bezierPosExY;
 -(void) setStart:(BOOL)isStart;
 @end

@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46702B9116EF2864005EA6D8 /* GCCParticleSystemQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = 46702B9016EF2864005EA6D8 /* GCCParticleSystemQuad.m */; };
 		E3DEFB1414FFD66C00B98586 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DEFB1314FFD66C00B98586 /* Cocoa.framework */; };
 		E3DEFB1E14FFD66C00B98586 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3DEFB1C14FFD66C00B98586 /* InfoPlist.strings */; };
 		E3DEFC5814FFDB7E00B98586 /* CCBPProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3DEFC5714FFDB7E00B98586 /* CCBPProperties.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46702B8F16EF2864005EA6D8 /* GCCParticleSystemQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCParticleSystemQuad.h; sourceTree = "<group>"; };
-		46702B9016EF2864005EA6D8 /* GCCParticleSystemQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCParticleSystemQuad.m; sourceTree = "<group>"; };
 		E3DEFB1014FFD66C00B98586 /* GCCParticleSystemQuad.ccbPlugNode */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCCParticleSystemQuad.ccbPlugNode; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DEFB1314FFD66C00B98586 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E3DEFB1614FFD66C00B98586 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -183,8 +180,6 @@
 		E3DEFB1914FFD66C00B98586 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				46702B8F16EF2864005EA6D8 /* GCCParticleSystemQuad.h */,
-				46702B9016EF2864005EA6D8 /* GCCParticleSystemQuad.m */,
 				E3DEFB1A14FFD66C00B98586 /* Supporting Files */,
 			);
 			path = Source;
@@ -464,7 +459,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46702B9116EF2864005EA6D8 /* GCCParticleSystemQuad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

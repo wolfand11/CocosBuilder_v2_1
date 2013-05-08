@@ -15,6 +15,18 @@
 		<dict>
 			<key>readOnly</key>
 			<true/>
+			<key>animatable</key>
+			<false/>
+			<key>displayName</key>
+			<string>Position</string>
+			<key>type</key>
+			<string>Position</string>
+			<key>name</key>
+			<string>position</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
 			<key>type</key>
 			<string>Size</string>
 			<key>name</key>
@@ -38,8 +50,28 @@
 			<true/>
 		</dict>
 		<dict>
-			<key>defaultSerialization</key>
+			<key>default</key>
+			<array>
+				<real>0</real>
+				<real>0</real>
+				<real>0</real>
+				<real>0</real>
+				<integer>0</integer>
+			</array>
+			<key>affectsProperties</key>
+			<array>
+				<string>position</string>
+			</array>
+			<key>animatable</key>
 			<true/>
+			<key>type</key>
+			<string>ExPos</string>
+			<key>name</key>
+			<string>bezierPos</string>
+			<key>displayName</key>
+			<string>Bezier Position</string>
+		</dict>
+		<dict>
 			<key>animatable</key>
 			<true/>
 			<key>type</key>

@@ -40,6 +40,7 @@ enum
     kCCBKeyframeTypeSpriteFrame,
     kCCBKeyframeTypeFloatXY,
     kCCBKeyframeTypeString,
+    kCCBKeyframeTypeBezierPos,
 
     // Channels
     kCCBKeyframeTypeSoundEffects,

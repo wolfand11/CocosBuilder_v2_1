@@ -3219,6 +3219,7 @@ static BOOL hideAllToNextSeparator;
     else if (tag == 6) return @"color";
     else if (tag == 7) return @"keyframeMark";
     else if (tag == 8) return @"start";
+    else if (tag == 9) return @"bezierPos";
     else return NULL;
 }
 

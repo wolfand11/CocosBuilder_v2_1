@@ -118,6 +118,11 @@
     {
         return kCCBKeyframeTypeString;
     }
+    else if ([type isEqualToString:@"ExPos"])
+    {
+        return kCCBKeyframeTypeBezierPos;
+    }
+
     else
     {
         return kCCBKeyframeTypeUndefined;
@@ -171,6 +176,20 @@
         int b1 = [[keyframe.value objectAtIndex:2] intValue];
         
         return (r0 == r1 && g0 == g1 && b0 == b1);
+    }
+    else if (type == kCCBKeyframeTypeBezierPos)
+    {
+        float x0 = [[value objectAtIndex:0] floatValue];
+        float y0 = [[value objectAtIndex:1] floatValue];
+        float xEx0 = [[value objectAtIndex:2] floatValue];
+        float yEx0 = [[value objectAtIndex:3] floatValue];
+        
+        float x1 = [[keyframe.value objectAtIndex:0] floatValue];
+        float y1 = [[keyframe.value objectAtIndex:1] floatValue];
+        float xEx1 = [[keyframe.value objectAtIndex:2] floatValue];
+        float yEx1 = [[keyframe.value objectAtIndex:3] floatValue];
+        
+        return (x0==x1 && y0==y1 && xEx0==xEx1 && yEx0==yEx1);
     }
     return NO;
 }

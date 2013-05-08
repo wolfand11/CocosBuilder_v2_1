@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4658E69B1738D918003BB7A6 /* InspectorExPos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4658E69A1738D918003BB7A6 /* InspectorExPos.xib */; };
+		4658E6A01738DB67003BB7A6 /* InspectorExPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 4658E69F1738DB66003BB7A6 /* InspectorExPos.m */; };
+		465F3799173A3C5A005222D5 /* GCCParticleSystemQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F3798173A3C59005222D5 /* GCCParticleSystemQuad.m */; };
 		46CCDBC91731156900C5D24D /* 1-CocosBuilder使用手册.org in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDB9B1731156900C5D24D /* 1-CocosBuilder使用手册.org */; };
 		46CCDBCA1731156900C5D24D /* 2-1-实现CocosBuilder控件插件.org in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDB9C1731156900C5D24D /* 2-1-实现CocosBuilder控件插件.org */; };
 		46CCDBCB1731156900C5D24D /* 2-2-实现cocos2d控件.org in Resources */ = {isa = PBXBuildFile; fileRef = 46CCDB9D1731156900C5D24D /* 2-2-实现cocos2d控件.org */; };
@@ -881,6 +884,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4658E69A1738D918003BB7A6 /* InspectorExPos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorExPos.xib; sourceTree = "<group>"; };
+		4658E69E1738DB66003BB7A6 /* InspectorExPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorExPos.h; sourceTree = "<group>"; };
+		4658E69F1738DB66003BB7A6 /* InspectorExPos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorExPos.m; sourceTree = "<group>"; };
+		465F3797173A3C59005222D5 /* GCCParticleSystemQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCParticleSystemQuad.h; sourceTree = "<group>"; };
+		465F3798173A3C59005222D5 /* GCCParticleSystemQuad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCParticleSystemQuad.m; sourceTree = "<group>"; };
 		46CCDB9B1731156900C5D24D /* 1-CocosBuilder使用手册.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-CocosBuilder使用手册.org"; sourceTree = "<group>"; };
 		46CCDB9C1731156900C5D24D /* 2-1-实现CocosBuilder控件插件.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2-1-实现CocosBuilder控件插件.org"; sourceTree = "<group>"; };
 		46CCDB9D1731156900C5D24D /* 2-2-实现cocos2d控件.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2-2-实现cocos2d控件.org"; sourceTree = "<group>"; };
@@ -2202,6 +2210,8 @@
 		46CCDBB71731156900C5D24D /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				465F3797173A3C59005222D5 /* GCCParticleSystemQuad.h */,
+				465F3798173A3C59005222D5 /* GCCParticleSystemQuad.m */,
 				46CCDBB81731156900C5D24D /* CCControlSliderHelper.h */,
 				46CCDBB91731156900C5D24D /* CCControlSliderHelper.m */,
 				46CCDBBA1731156900C5D24D /* CCEditBox.h */,
@@ -3973,6 +3983,9 @@
 				E3C65127151C7B8F00D639C0 /* InspectorBlockCCControl.xib */,
 				E3C65129151C7E3600D639C0 /* InspectorBlockCCControl.h */,
 				E3C6512A151C7E3600D639C0 /* InspectorBlockCCControl.m */,
+				4658E69A1738D918003BB7A6 /* InspectorExPos.xib */,
+				4658E69E1738DB66003BB7A6 /* InspectorExPos.h */,
+				4658E69F1738DB66003BB7A6 /* InspectorExPos.m */,
 			);
 			name = "Inspector Properties";
 			sourceTree = "<group>";
@@ -4866,6 +4879,7 @@
 				46CCDBCA1731156900C5D24D /* 2-1-实现CocosBuilder控件插件.org in Resources */,
 				46CCDBCB1731156900C5D24D /* 2-2-实现cocos2d控件.org in Resources */,
 				46CCDBCC1731156900C5D24D /* README.org in Resources */,
+				4658E69B1738D918003BB7A6 /* InspectorExPos.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5386,6 +5400,8 @@
 				46CCDBDC1731156900C5D24D /* GCCLabelAtlas.m in Sources */,
 				46CCDBDD1731156900C5D24D /* GCCScale9Sprite.m in Sources */,
 				46CCDBDE1731156900C5D24D /* GTab.m in Sources */,
+				4658E6A01738DB67003BB7A6 /* InspectorExPos.m in Sources */,
+				465F3799173A3C5A005222D5 /* GCCParticleSystemQuad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

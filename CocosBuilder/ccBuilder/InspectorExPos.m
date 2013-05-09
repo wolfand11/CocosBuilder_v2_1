@@ -213,7 +213,7 @@
     [node setExtraProp:[NSNumber numberWithFloat:pos.y] forKey:[prop stringByAppendingString:@"Y"]];
     [node setExtraProp:[NSNumber numberWithFloat:pos.exX] forKey:[prop stringByAppendingString:@"ExX"]];
     [node setExtraProp:[NSNumber numberWithFloat:pos.exY] forKey:[prop stringByAppendingString:@"ExY"]];
-    [node setExtraProp:[NSNumber numberWithInt:type] forKey:[NSString stringWithFormat:@"%@Type", prop]];
+    [node setExtraProp:[NSNumber numberWithInt:type] forKey:[prop stringByAppendingString:@"Type"]];
 }
 
 + (void) setExPosition:(GExPos)pos forNode:(CCNode *)node prop:(NSString *)prop

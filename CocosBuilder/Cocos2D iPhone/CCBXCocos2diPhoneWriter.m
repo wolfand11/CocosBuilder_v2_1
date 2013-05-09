@@ -453,10 +453,12 @@
         float y=[[prop objectAtIndex:1] floatValue];
         float xEx=[[prop objectAtIndex:2] floatValue];
         float yEx=[[prop objectAtIndex:3] floatValue];
+        float posType=[[prop objectAtIndex:4] intValue];
         [self writeFloat:x];
         [self writeFloat:y];
         [self writeFloat:xEx];
         [self writeFloat:yEx];
+        [self writeInt:posType withSign:NO];
     }
 }
 

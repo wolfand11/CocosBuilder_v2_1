@@ -67,10 +67,24 @@
 - (void) addCustomSizeScreenResolutions
 {
     // iOS resolutions
-    ResolutionSetting* iPhone = [ResolutionSetting settingIPhone];
-    iPhone.enabled = YES;
-    [resolutionsController addObject:iPhone];
-    [resolutionsController addObject:[ResolutionSetting settingIPad]];
+    
+//    // 1 Portraint iPhone4 & iPhone5
+//    ResolutionSetting* iPhone5PortraintRetina = [ResolutionSetting settingIPhone5PortraitRetina];
+//    iPhone5PortraintRetina.enabled = YES;
+//    ResolutionSetting* iPhonePortraintRetina = [ResolutionSetting settingIPhonePortraitRetina];
+//    iPhonePortraintRetina.enabled = YES;
+//    [resolutionsController addObject:iPhonePortraintRetina];
+//    [resolutionsController addObject:iPhone5PortraintRetina];
+
+    // 2 Landscape iPhone4 & iPhone5
+    ResolutionSetting* iPhone5LandscapeRetina = [ResolutionSetting settingIPhone5LandscapeRetina];
+    iPhone5LandscapeRetina.enabled = YES;
+    ResolutionSetting* iPhoneLandscapeRetina = [ResolutionSetting settingIPhoneLandscapeRetina];
+    iPhoneLandscapeRetina.enabled = YES;
+    [resolutionsController addObject:iPhoneLandscapeRetina];
+    [resolutionsController addObject:iPhone5LandscapeRetina];
+    
+    [resolutionsController addObject:[ResolutionSetting settingIPhoneLandscape]];
     
     // Android resolutions
     [resolutionsController addObject:[ResolutionSetting settingAndroidXSmall]];

@@ -38,6 +38,7 @@
 #import "CCBDocument.h"
 #import "CustomPropSetting.h"
 #import "CocosScene.h"
+#import "InspectorExPos.h"
 
 @implementation CCNode (NodeInfo)
 
@@ -304,7 +305,22 @@
                 [NSNumber numberWithFloat:y],
                 nil];
     }
-    
+    else if (type == kCCBKeyframeTypeBezierPos)
+    {
+        float x = [[self valueForKey:[name stringByAppendingString:@"X"]] floatValue];
+        float y = [[self valueForKey:[name stringByAppendingString:@"Y"]] floatValue];
+        float xEx = [[self valueForKey:[name stringByAppendingString:@"ExX"]] floatValue];
+        float yEx = [[self valueForKey:[name stringByAppendingString:@"ExY"]] floatValue];
+        int posType = [[self valueForKey:[name stringByAppendingString:@"Type"]] intValue];
+        return [NSArray arrayWithObjects:
+                [NSNumber numberWithFloat:x],
+                [NSNumber numberWithFloat:y],
+                [NSNumber numberWithFloat:xEx],
+                [NSNumber numberWithFloat:yEx],
+                [NSNumber numberWithInt:posType],
+                nil];
+    }
+
     return NULL;
 }
 
@@ -365,6 +381,16 @@
         
         [self setValue:[NSNumber numberWithFloat:x] forKey:[propName stringByAppendingString:@"X"]];
         [self setValue:[NSNumber numberWithFloat:y] forKey:[propName stringByAppendingString:@"Y"]];
+    }
+    else if (type == kCCBKeyframeTypeBezierPos)
+    {
+        GExPos exPos;
+        exPos.x = [[value objectAtIndex:0] floatValue];
+        exPos.y = [[value objectAtIndex:1] floatValue];
+        exPos.exX = [[value objectAtIndex:2] floatValue];
+        exPos.exY = [[value objectAtIndex:3] floatValue];
+        
+        [ExPosSetter setExPosition:exPos forNode:self prop:propName];
     }
 }
 

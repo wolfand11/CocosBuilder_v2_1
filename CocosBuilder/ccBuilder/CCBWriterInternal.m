@@ -411,6 +411,21 @@
             if (!spriteFile) spriteFile = @"";
             serializedValue = spriteFile;
         }
+        else if ([type isEqualToString:@"ExPos"])
+        {
+            NSNumber* x = [extraProps objectForKey:[NSString stringWithFormat:@"%@X",name]];
+            NSNumber* y = [extraProps objectForKey:[NSString stringWithFormat:@"%@Y",name]];
+            NSNumber* xEx = [extraProps objectForKey:[NSString stringWithFormat:@"%@ExX",name]];
+            NSNumber* yEx = [extraProps objectForKey:[NSString stringWithFormat:@"%@ExY",name]];
+            NSNumber* posType = [extraProps objectForKey:[NSString stringWithFormat:@"%@Type",name]];
+            if (!x) {x=[NSNumber numberWithFloat:0.0f];}
+            if (!y) {y=[NSNumber numberWithFloat:0.0f];}
+            if (!xEx) {xEx=[NSNumber numberWithFloat:0.0f];}
+            if (!yEx) {yEx=[NSNumber numberWithFloat:0.0f];}
+            if (!posType) {posType=[NSNumber numberWithInt:0];}
+            
+            serializedValue = [NSArray arrayWithObjects:x,y,xEx,yEx,posType,nil];
+        }
         else
         {
             NSLog(@"WARNING Unrecognized property type: %@", type);

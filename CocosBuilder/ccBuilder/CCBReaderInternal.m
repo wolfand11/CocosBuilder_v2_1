@@ -304,6 +304,17 @@ NSDictionary* renamedProperties = NULL;
         [NodeGraphPropertySetter setNodeGraphForNode:node andProperty:name withFile:ccbFile parentSize:parentSize];
         [extraProps setObject:ccbFile forKey:name];
     }
+    else if ([type isEqualToString:@"ExPos"])
+    {
+        float x = [[serializedValue objectAtIndex:0] floatValue];
+        float y = [[serializedValue objectAtIndex:1] floatValue];
+        float xEx = [[serializedValue objectAtIndex:2] floatValue];
+        float yEx = [[serializedValue objectAtIndex:3] floatValue];
+        [node setValue:[NSNumber numberWithInt:x] forKey:[NSString stringWithFormat:@"%@X",name]];
+        [node setValue:[NSNumber numberWithInt:y] forKey:[NSString stringWithFormat:@"%@Y",name]];
+        [node setValue:[NSNumber numberWithInt:xEx] forKey:[NSString stringWithFormat:@"%@ExX",name]];
+        [node setValue:[NSNumber numberWithInt:yEx] forKey:[NSString stringWithFormat:@"%@ExY",name]];
+    }
     else
     {
         NSLog(@"WARNING Unrecognized property type: %@", type);

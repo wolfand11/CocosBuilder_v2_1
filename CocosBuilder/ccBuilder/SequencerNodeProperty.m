@@ -36,6 +36,14 @@
 @synthesize type;
 @synthesize propName;
 
+static inline CGFloat bezierat( float a, float b, float c, float d, ccTime t )
+{
+	return (powf(1-t,3) * a +
+			3*t*(powf(1-t,2))*b +
+			3*powf(t,2)*(1-t)*c +
+			powf(t,3)*d );
+}
+
 - (id) initWithProperty:(NSString*) name node:(CCNode*)n
 {
     self = [super init];
@@ -399,7 +407,38 @@
                 [NSNumber numberWithFloat:yVal],
                 nil];
     }
-    
+    else if (type == kCCBKeyframeTypeBezierPos)
+    {
+        float xStart = [[keyframeStart.value objectAtIndex:0] floatValue];
+        float yStart = [[keyframeStart.value objectAtIndex:1] floatValue];
+        float exXStart = [[keyframeStart.value objectAtIndex:2] floatValue];
+        float exYStart = [[keyframeStart.value objectAtIndex:3] floatValue];
+        
+        float xEnd = [[keyframeEnd.value objectAtIndex:0] floatValue];
+        float yEnd = [[keyframeEnd.value objectAtIndex:1] floatValue];
+        float exXEnd = [[keyframeEnd.value objectAtIndex:2] floatValue];
+        float exYEnd = [[keyframeEnd.value objectAtIndex:3] floatValue];
+        
+        float xDelta = bezierat(0, exXStart, exXEnd, xEnd, interpolVal);
+        float yDelta = bezierat(0, exYStart, exYEnd, yEnd, interpolVal);
+        
+        float xVal = xStart+xDelta;
+        float yVal = yStart+yDelta;
+        float exXVal = exXStart;
+        float exYVal = exYStart;
+        if (interpolVal == 1.0f )
+        {
+            exXVal = exXEnd;
+            exYVal = exYEnd;
+        }
+        
+        return [NSArray arrayWithObjects:
+                [NSNumber numberWithFloat:xVal],
+                [NSNumber numberWithFloat:yVal],
+                [NSNumber numberWithFloat:exXVal],
+                [NSNumber numberWithFloat:exYVal],
+                nil];
+    }
     
     // Unsupported value type
     return NULL;

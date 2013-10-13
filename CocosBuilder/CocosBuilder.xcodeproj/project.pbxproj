@@ -30,6 +30,8 @@
 		46871CAD180A9D41006861C5 /* GCCParticleSystemQuad.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C93180A9D41006861C5 /* GCCParticleSystemQuad.m */; };
 		46871CAE180A9D41006861C5 /* GCCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C95180A9D41006861C5 /* GCCScale9Sprite.m */; };
 		46871CAF180A9D41006861C5 /* GTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C97180A9D41006861C5 /* GTab.m */; };
+		46871CB8180AE6CD006861C5 /* InspectorExPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871CB6180AE6CD006861C5 /* InspectorExPos.m */; };
+		46871CB9180AE6CD006861C5 /* InspectorExPos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46871CB7180AE6CD006861C5 /* InspectorExPos.xib */; };
 		581130601639C52500A86D70 /* seq-startmarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5811305F1639C52000A86D70 /* seq-startmarker.png */; };
 		581BCFE8162DADE7007DE600 /* CCBSplitHorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BCFE7162DADE7007DE600 /* CCBSplitHorizontalView.m */; };
 		58FA2034162D73F3006B8856 /* TB_bottomPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2031162D73F3006B8856 /* TB_bottomPanel.png */; };
@@ -931,6 +933,9 @@
 		46871C95180A9D41006861C5 /* GCCScale9Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCScale9Sprite.m; sourceTree = "<group>"; };
 		46871C96180A9D41006861C5 /* GTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTab.h; sourceTree = "<group>"; };
 		46871C97180A9D41006861C5 /* GTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTab.m; sourceTree = "<group>"; };
+		46871CB5180AE6CD006861C5 /* InspectorExPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorExPos.h; sourceTree = "<group>"; };
+		46871CB6180AE6CD006861C5 /* InspectorExPos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorExPos.m; sourceTree = "<group>"; };
+		46871CB7180AE6CD006861C5 /* InspectorExPos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorExPos.xib; sourceTree = "<group>"; };
 		5811305E1639BF1200A86D70 /* SequencerTimelineDrawDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequencerTimelineDrawDelegate.h; sourceTree = "<group>"; };
 		5811305F1639C52000A86D70 /* seq-startmarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seq-startmarker.png"; sourceTree = "<group>"; };
 		581BCFE6162DADE7007DE600 /* CCBSplitHorizontalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSplitHorizontalView.h; sourceTree = "<group>"; };
@@ -3883,6 +3888,9 @@
 		E3B7AEE614E33E5700DFD402 /* Inspector Properties */ = {
 			isa = PBXGroup;
 			children = (
+				46871CB5180AE6CD006861C5 /* InspectorExPos.h */,
+				46871CB6180AE6CD006861C5 /* InspectorExPos.m */,
+				46871CB7180AE6CD006861C5 /* InspectorExPos.xib */,
 				E3B7AEED14E34A4D00DFD402 /* InspectorValue.h */,
 				E3B7AEEE14E34A4D00DFD402 /* InspectorValue.m */,
 				E3214C4815D40F01002413A7 /* InspectorCustom.h */,
@@ -4819,6 +4827,7 @@
 				E3926192159CAAA10034FF1D /* seq-keyframe-r-sel.png in Resources */,
 				E3926193159CAAA10034FF1D /* seq-keyframe-r.png in Resources */,
 				E3FD4DCF15A09F6D0032C2DD /* SequencerKeyframeEasingWindow.xib in Resources */,
+				46871CB9180AE6CD006861C5 /* InspectorExPos.xib in Resources */,
 				E3FD4DDB15A301EF0032C2DD /* seq-next-seq.png in Resources */,
 				E3DFA7CD15ACA0CD005D3B6F /* frame-android-medium.png in Resources */,
 				E3DFA7CE15ACA0CD005D3B6F /* frame-android-small.png in Resources */,
@@ -5252,6 +5261,7 @@
 				E36A27EE152263B4004986A8 /* CCMotionStreak.m in Sources */,
 				E36A27EF152263B4004986A8 /* CCNode.m in Sources */,
 				E36A27F0152263B4004986A8 /* CCParallaxNode.m in Sources */,
+				46871CB8180AE6CD006861C5 /* InspectorExPos.m in Sources */,
 				E36A27F1152263B4004986A8 /* CCParticleBatchNode.m in Sources */,
 				E36A27F2152263B4004986A8 /* CCParticleExamples.m in Sources */,
 				E36A27F3152263B4004986A8 /* CCParticleSystem.m in Sources */,

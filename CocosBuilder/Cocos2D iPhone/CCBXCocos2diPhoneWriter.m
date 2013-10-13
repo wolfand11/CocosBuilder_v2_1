@@ -65,6 +65,7 @@
     [propTypes addObject:@"BlockCCControl"];
     [propTypes addObject:@"FloatScale"];
     [propTypes addObject:@"FloatXY"];
+    [propTypes addObject:@"ExPos"];
 }
 
 - (id) init
@@ -446,6 +447,19 @@
         [self writeInt:a withSign:NO];
         [self writeInt:b withSign:NO];
     }
+    else if ([type isEqualToString:@"ExPos"])
+    {
+        float x=[[prop objectAtIndex:0] floatValue];
+        float y=[[prop objectAtIndex:1] floatValue];
+        float xEx=[[prop objectAtIndex:2] floatValue];
+        float yEx=[[prop objectAtIndex:3] floatValue];
+        float posType=[[prop objectAtIndex:4] intValue];
+        [self writeFloat:x];
+        [self writeFloat:y];
+        [self writeFloat:xEx];
+        [self writeFloat:yEx];
+        [self writeInt:posType withSign:NO];
+    }
 }
 
 - (void) cacheStringsForNode:(NSDictionary*) node
@@ -823,6 +837,17 @@
         [self writeCachedString:a isPath:YES];
         [self writeCachedString:b isPath:[a isEqualToString:@""]];
     }
+    else if ([type isEqualToString:@"ExPos"])
+    {
+        float x=[[value objectAtIndex:0] floatValue];
+        float y=[[value objectAtIndex:1] floatValue];
+        float xEx=[[value objectAtIndex:2] floatValue];
+        float yEx=[[value objectAtIndex:3] floatValue];
+        [self writeFloat:x];
+        [self writeFloat:y];
+        [self writeFloat:xEx];
+        [self writeFloat:yEx];
+    }
 }
 
 - (void) writeNodeGraph:(NSDictionary*)node
@@ -892,7 +917,8 @@
             else if (kfType == kCCBKeyframeTypeSpriteFrame) propType = @"SpriteFrame";
             else if (kfType == kCCBKeyframeTypePosition) propType = @"Position";
             else if (kfType == kCCBKeyframeTypeFloatXY) propType = @"FloatXY";
-            
+            else if (kfType == kCCBKeyframeTypeBezierPos) propType = @"ExPos";
+
             NSAssert(propType, @"Unknown animated property type");
             
             [self writeInt:[self propTypeIdForName:propType] withSign:NO];

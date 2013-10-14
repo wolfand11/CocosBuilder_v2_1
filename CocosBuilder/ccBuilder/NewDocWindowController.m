@@ -38,9 +38,13 @@
 - (void) addFullScreenResolutions
 {
     // iOS resolutions
-    ResolutionSetting* iPhoneLandscape = [ResolutionSetting settingIPhoneLandscape];
-    iPhoneLandscape.enabled = YES;
-    [resolutionsController addObject:iPhoneLandscape];
+    ResolutionSetting* iPhoneLandscapeRetina = [ResolutionSetting settingIPhoneLandscapeRetina];
+    iPhoneLandscapeRetina.enabled = YES;
+    [resolutionsController addObject:iPhoneLandscapeRetina];
+    ResolutionSetting* iPhone5LandscapeRetina = [ResolutionSetting settingIPhone5LandscapeRetina];
+    iPhone5LandscapeRetina.enabled = YES;
+    [resolutionsController addObject:iPhone5LandscapeRetina];
+
     [resolutionsController addObject:[ResolutionSetting settingIPhonePortrait]];
     [resolutionsController addObject:[ResolutionSetting settingIPhone5Landscape]];
     [resolutionsController addObject:[ResolutionSetting settingIPhone5Portrait]];

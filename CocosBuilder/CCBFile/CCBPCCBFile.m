@@ -57,8 +57,6 @@
     {
         self.contentSize = CGSizeZero;
     }
-    self.anchorPoint = ccp(0,0);
-    self.ignoreAnchorPointForPosition = NO;
 }
 
 - (id) extraPropForKey:(NSString *)key

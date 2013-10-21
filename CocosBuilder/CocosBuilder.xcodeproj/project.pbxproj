@@ -32,6 +32,7 @@
 		46871CAF180A9D41006861C5 /* GTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C97180A9D41006861C5 /* GTab.m */; };
 		46871CB8180AE6CD006861C5 /* InspectorExPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871CB6180AE6CD006861C5 /* InspectorExPos.m */; };
 		46871CB9180AE6CD006861C5 /* InspectorExPos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46871CB7180AE6CD006861C5 /* InspectorExPos.xib */; };
+		46FA56261814BF5C00816F5C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 46FA56251814BF5C00816F5C /* icon.icns */; };
 		581130601639C52500A86D70 /* seq-startmarker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5811305F1639C52000A86D70 /* seq-startmarker.png */; };
 		581BCFE8162DADE7007DE600 /* CCBSplitHorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581BCFE7162DADE7007DE600 /* CCBSplitHorizontalView.m */; };
 		58FA2034162D73F3006B8856 /* TB_bottomPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2031162D73F3006B8856 /* TB_bottomPanel.png */; };
@@ -91,7 +92,6 @@
 		7789ACEF133AB6A700CEFCC7 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7789ACED133AB6A700CEFCC7 /* icon.icns */; };
 		7789ACF1133BD5E800CEFCC7 /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7789ACF0133BD5E800CEFCC7 /* header-bg.png */; };
 		77AC50231360A05400B04360 /* CocosBuilderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AC50221360A05300B04360 /* CocosBuilderIcon.png */; };
-		77AC50251360A0FB00B04360 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 77AC50241360A0FB00B04360 /* Icon.icns */; };
 		77D33E95138E714700012A88 /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D33E94138E714700012A88 /* ExceptionHandling.framework */; };
 		77D33EAB138EA4F900012A88 /* CCBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D33EAA138EA4F800012A88 /* CCBUtil.m */; };
 		77D33EAD138EFBD800012A88 /* StageSizeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D33EAC138EFBD800012A88 /* StageSizeWindow.xib */; };
@@ -936,6 +936,7 @@
 		46871CB5180AE6CD006861C5 /* InspectorExPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorExPos.h; sourceTree = "<group>"; };
 		46871CB6180AE6CD006861C5 /* InspectorExPos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorExPos.m; sourceTree = "<group>"; };
 		46871CB7180AE6CD006861C5 /* InspectorExPos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorExPos.xib; sourceTree = "<group>"; };
+		46FA56251814BF5C00816F5C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		5811305E1639BF1200A86D70 /* SequencerTimelineDrawDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequencerTimelineDrawDelegate.h; sourceTree = "<group>"; };
 		5811305F1639C52000A86D70 /* seq-startmarker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seq-startmarker.png"; sourceTree = "<group>"; };
 		581BCFE6162DADE7007DE600 /* CCBSplitHorizontalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSplitHorizontalView.h; sourceTree = "<group>"; };
@@ -1017,7 +1018,6 @@
 		7789ACED133AB6A700CEFCC7 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		7789ACF0133BD5E800CEFCC7 /* header-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-bg.png"; sourceTree = "<group>"; };
 		77AC50221360A05300B04360 /* CocosBuilderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CocosBuilderIcon.png; path = ../CocosBuilderIcon.png; sourceTree = "<group>"; };
-		77AC50241360A0FB00B04360 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icon.icns; path = ../Icon.icns; sourceTree = "<group>"; };
 		77D33E94138E714700012A88 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = System/Library/Frameworks/ExceptionHandling.framework; sourceTree = SDKROOT; };
 		77D33EA9138EA4F800012A88 /* CCBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBUtil.h; sourceTree = "<group>"; };
 		77D33EAA138EA4F800012A88 /* CCBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBUtil.m; sourceTree = "<group>"; };
@@ -2362,10 +2362,10 @@
 			children = (
 				E3A16D8E156E145700F6C326 /* CocosBuilderPlayerIcon.icns */,
 				E3BF89D8156D36B6001A24CE /* CocosBuilderProjectIcon.icns */,
-				77AC50241360A0FB00B04360 /* Icon.icns */,
 				776C687513872CA700153214 /* CocosBuilderDocIcon.icns */,
 				77055FB313D0E5CA009DD63A /* logo-icon.png */,
 				77055FB413D0E5CA009DD63A /* logo.png */,
+				46FA56251814BF5C00816F5C /* icon.icns */,
 				77AC50221360A05300B04360 /* CocosBuilderIcon.png */,
 			);
 			name = "Icons & Logos";
@@ -4679,7 +4679,6 @@
 				772BE567133E40D60009B5B9 /* missing-texture.png in Resources */,
 				772BE57C134398EE0009B5B9 /* NewDocWindow.xib in Resources */,
 				77AC50231360A05400B04360 /* CocosBuilderIcon.png in Resources */,
-				77AC50251360A0FB00B04360 /* Icon.icns in Resources */,
 				774F95C613638D74005D43EB /* missing-particle-texture.png in Resources */,
 				774E4EC2136D98AB0025D0A8 /* select-bl.png in Resources */,
 				774E4EC3136D98AB0025D0A8 /* select-br.png in Resources */,
@@ -4804,6 +4803,7 @@
 				E3E8B49B15793AF800373983 /* seq-btn-run.png in Resources */,
 				E3E8B49C15793AF800373983 /* seq-btn-stepback.png in Resources */,
 				E3E8B49D15793AF800373983 /* seq-btn-stepforward.png in Resources */,
+				46FA56261814BF5C00816F5C /* icon.icns in Resources */,
 				E3E8B49E15793AF800373983 /* seq-btn-stop.png in Resources */,
 				E3E8B4A4157CD5DB00373983 /* seq-scrub-handle.png in Resources */,
 				E3E8B4A5157CD5DB00373983 /* seq-scrub-line.png in Resources */,

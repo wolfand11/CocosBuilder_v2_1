@@ -9,5 +9,16 @@
 #import "GEasySlideContainer.h"
 
 @implementation GEasySlideContainer
-@synthesize direction;
+
+-(id) init
+{
+    if ([super init])
+    {
+        [self setAnchorPoint:CGPointZero];
+        [self setIgnoreAnchorPointForPosition:YES];
+        return self;
+    }
+    return nil;
+}
+
 @end

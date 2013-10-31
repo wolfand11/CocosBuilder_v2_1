@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46871C99180A9D41006861C5 /* 1-CocosBuilder使用手册.org in Resources */ = {isa = PBXBuildFile; fileRef = 46871C69180A9D41006861C5 /* 1-CocosBuilder使用手册.org */; };
-		46871C9A180A9D41006861C5 /* 2-1-实现CocosBuilder控件插件.org in Resources */ = {isa = PBXBuildFile; fileRef = 46871C6A180A9D41006861C5 /* 2-1-实现CocosBuilder控件插件.org */; };
-		46871C9B180A9D41006861C5 /* 2-2-实现cocos2d控件.org in Resources */ = {isa = PBXBuildFile; fileRef = 46871C6B180A9D41006861C5 /* 2-2-实现cocos2d控件.org */; };
-		46871C9C180A9D41006861C5 /* README.org in Resources */ = {isa = PBXBuildFile; fileRef = 46871C6C180A9D41006861C5 /* README.org */; };
 		46871C9D180A9D41006861C5 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C6F180A9D41006861C5 /* GAbstractContainerItem.m */; };
 		46871C9E180A9D41006861C5 /* GAbstractLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C71180A9D41006861C5 /* GAbstractLayer.m */; };
 		46871C9F180A9D41006861C5 /* GAbstractSlideContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C73180A9D41006861C5 /* GAbstractSlideContainer.m */; };
@@ -890,10 +886,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		46871C69180A9D41006861C5 /* 1-CocosBuilder使用手册.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-CocosBuilder使用手册.org"; sourceTree = "<group>"; };
-		46871C6A180A9D41006861C5 /* 2-1-实现CocosBuilder控件插件.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2-1-实现CocosBuilder控件插件.org"; sourceTree = "<group>"; };
-		46871C6B180A9D41006861C5 /* 2-2-实现cocos2d控件.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2-2-实现cocos2d控件.org"; sourceTree = "<group>"; };
-		46871C6C180A9D41006861C5 /* README.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.org; sourceTree = "<group>"; };
 		46871C6E180A9D41006861C5 /* GAbstractContainerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractContainerItem.h; sourceTree = "<group>"; };
 		46871C6F180A9D41006861C5 /* GAbstractContainerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractContainerItem.m; sourceTree = "<group>"; };
 		46871C70180A9D41006861C5 /* GAbstractLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractLayer.h; sourceTree = "<group>"; };
@@ -2159,24 +2151,12 @@
 		46871C66180A9D40006861C5 /* CustomWidget */ = {
 			isa = PBXGroup;
 			children = (
-				46871C68180A9D41006861C5 /* Document */,
 				46871C6D180A9D41006861C5 /* Layer */,
 				46871C7A180A9D41006861C5 /* Layout */,
 				46871C81180A9D41006861C5 /* Utility */,
 				46871C85180A9D41006861C5 /* Widget */,
 			);
 			path = CustomWidget;
-			sourceTree = "<group>";
-		};
-		46871C68180A9D41006861C5 /* Document */ = {
-			isa = PBXGroup;
-			children = (
-				46871C69180A9D41006861C5 /* 1-CocosBuilder使用手册.org */,
-				46871C6A180A9D41006861C5 /* 2-1-实现CocosBuilder控件插件.org */,
-				46871C6B180A9D41006861C5 /* 2-2-实现cocos2d控件.org */,
-				46871C6C180A9D41006861C5 /* README.org */,
-			);
-			path = Document;
 			sourceTree = "<group>";
 		};
 		46871C6D180A9D41006861C5 /* Layer */ = {
@@ -4701,7 +4681,6 @@
 				77E1995913858DE0006C361B /* TabClose_Front_Rollover.png in Resources */,
 				77E1995A13858DE0006C361B /* TabClose_Front.png in Resources */,
 				77E1995B13858DE0006C361B /* TabNewMetal.png in Resources */,
-				46871C9A180A9D41006861C5 /* 2-1-实现CocosBuilder控件插件.org in Resources */,
 				77E1995C13858DE0006C361B /* TabNewMetalPressed.png in Resources */,
 				77E1995D13858DE0006C361B /* TabNewMetalRollover.png in Resources */,
 				776C687613872CA700153214 /* CocosBuilderDocIcon.icns in Resources */,
@@ -4715,7 +4694,6 @@
 				776A370C139544A200960E94 /* TB_grab.png in Resources */,
 				776A370D139544A200960E94 /* TB_select.png in Resources */,
 				776A370E139544A200960E94 /* TB_zoomIn.png in Resources */,
-				46871C99180A9D41006861C5 /* 1-CocosBuilder使用手册.org in Resources */,
 				776A370F139544A200960E94 /* TB_zoomOut.png in Resources */,
 				776A37B8139BCE3600960E94 /* TB_imageAssets.png in Resources */,
 				77055FB513D0E5CA009DD63A /* logo-icon.png in Resources */,
@@ -4745,7 +4723,6 @@
 				E35DBBFB14F3EE210070A6E4 /* InspectorFloat.xib in Resources */,
 				E35DBC1B14F4DED00070A6E4 /* InspectorStartStop.xib in Resources */,
 				E35DBC2014F4ED0E0070A6E4 /* InspectorIntegerLabeled.xib in Resources */,
-				46871C9B180A9D41006861C5 /* 2-2-实现cocos2d控件.org in Resources */,
 				E35DBC2514F4FEF90070A6E4 /* InspectorTexture.xib in Resources */,
 				E325F64514F531F500D29BCF /* InspectorFloatVar.xib in Resources */,
 				E325F64A14F53FD000D29BCF /* InspectorColor4FVar.xib in Resources */,
@@ -4759,7 +4736,6 @@
 				E3C65106151A3B7C00D639C0 /* InspectorString.xib in Resources */,
 				E3C65128151C7B9000D639C0 /* InspectorBlockCCControl.xib in Resources */,
 				E34E5D6A153585EC000201FB /* ruler-bg-horizontal.png in Resources */,
-				46871C9C180A9D41006861C5 /* README.org in Resources */,
 				E34E5D6B153585EC000201FB /* ruler-bg-vertical.png in Resources */,
 				E34E5D6E1535AA78000201FB /* ruler-mark-major.png in Resources */,
 				E34E5D6F1535AA78000201FB /* ruler-mark-minor.png in Resources */,

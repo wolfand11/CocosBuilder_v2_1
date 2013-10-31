@@ -22,16 +22,6 @@
 			<key>dontSetInEditor</key>
 			<true/>
 		</dict>
-		<dict>
-			<key>displayName</key>
-			<string>Direction</string>
-			<key>type</key>
-			<string>IntegerLabeled</string>
-			<key>name</key>
-			<string>direction</string>
-			<key>extra</key>
-			<string>Horizontal|0|Vertical|1</string>
-		</dict>
 	</array>
 	<key>propertiesOverridden</key>
 	<array>

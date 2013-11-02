@@ -14,8 +14,13 @@
 {
     if ([super init])
     {
+        // ccb 通过 anchorPoint来保存Container的slideDirection
+        // anchorPoint.y = 0 slideDirection = horizontal
+        // anchorPoint.y = 1 slideDirection = vertical
         [self setAnchorPoint:CGPointZero];
-        [self setIgnoreAnchorPointForPosition:YES];
+        [self setIgnoreAnchorPointForPosition:NO];
+        // ccb 通过position contentSize来保存Container的touchRect属性
+        [self setContentSize:CGSizeMake(100.0f, 100.0f)];
         return self;
     }
     return nil;

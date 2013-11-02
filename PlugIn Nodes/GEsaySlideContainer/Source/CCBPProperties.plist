@@ -59,8 +59,11 @@
 			<string>Scale</string>
 		</dict>
 		<dict>
-			<key>readOnly</key>
-			<true/>
+			<key>default</key>
+			<array>
+				<real>0</real>
+				<real>0</real>
+			</array>
 			<key>type</key>
 			<string>Point</string>
 			<key>name</key>

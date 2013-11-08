@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>GAbstractLayout</string>
+	<key>canHaveChildren</key>
+	<string>NO</string>
+	<key>className</key>
+	<string>GEZLayoutHasZArea</string>
+	<key>editorClassName</key>
+	<string>GEZLayoutHasZArea</string>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>GEZLayoutHasZArea</string>
+			<key>displayName</key>
+			<string>GEZLayoutHasZArea</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>0</integer>
+			<key>displayName</key>
+			<string>StartZoomIndex</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>name</key>
+			<string>startZoomIndex</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>1</integer>
+			<key>displayName</key>
+			<string>ZoomItemsCount</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>name</key>
+			<string>zoomItemsCount</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>1</integer>
+			<key>displayName</key>
+			<string>ShowedItemsCount</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>name</key>
+			<string>showedItemsCount</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4644DC5E182B8EF500823CB0 /* GEZLayoutHasZArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 4644DC5D182B8EF500823CB0 /* GEZLayoutHasZArea.m */; };
 		46871C9D180A9D41006861C5 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C6F180A9D41006861C5 /* GAbstractContainerItem.m */; };
 		46871C9E180A9D41006861C5 /* GAbstractLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C71180A9D41006861C5 /* GAbstractLayer.m */; };
 		46871C9F180A9D41006861C5 /* GAbstractSlideContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C73180A9D41006861C5 /* GAbstractSlideContainer.m */; };
@@ -886,6 +887,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4644DC5C182B8EF500823CB0 /* GEZLayoutHasZArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEZLayoutHasZArea.h; sourceTree = "<group>"; };
+		4644DC5D182B8EF500823CB0 /* GEZLayoutHasZArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEZLayoutHasZArea.m; sourceTree = "<group>"; };
 		46871C6E180A9D41006861C5 /* GAbstractContainerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractContainerItem.h; sourceTree = "<group>"; };
 		46871C6F180A9D41006861C5 /* GAbstractContainerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAbstractContainerItem.m; sourceTree = "<group>"; };
 		46871C70180A9D41006861C5 /* GAbstractLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAbstractLayer.h; sourceTree = "<group>"; };
@@ -2187,6 +2190,8 @@
 				46871C7E180A9D41006861C5 /* GConfigLayout.m */,
 				46871C7F180A9D41006861C5 /* GNormalLayout.h */,
 				46871C80180A9D41006861C5 /* GNormalLayout.m */,
+				4644DC5C182B8EF500823CB0 /* GEZLayoutHasZArea.h */,
+				4644DC5D182B8EF500823CB0 /* GEZLayoutHasZArea.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -5270,6 +5275,7 @@
 				E36A280D152263B4004986A8 /* CCES2Renderer.m in Sources */,
 				46871CA7180A9D41006861C5 /* CCControlSliderHelper.m in Sources */,
 				E36A280E152263B4004986A8 /* CCGLView.m in Sources */,
+				4644DC5E182B8EF500823CB0 /* GEZLayoutHasZArea.m in Sources */,
 				E36A280F152263B4004986A8 /* CCTouchDispatcher.m in Sources */,
 				E36A2810152263B4004986A8 /* CCTouchHandler.m in Sources */,
 				E36A2811152263B4004986A8 /* CCDirectorMac.m in Sources */,

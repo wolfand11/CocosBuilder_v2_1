@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>inheritsFrom</key>
-	<string>GAbstractSlideLayer</string>
+	<string>CCLayer</string>
 	<key>canHaveChildren</key>
 	<string>YES</string>
 	<key>className</key>
@@ -11,38 +11,121 @@
 	<key>editorClassName</key>
 	<string>GAbstractSlideContainer</string>
 	<key>properties</key>
-	<array/>
-	<key>propertiesOverridden</key>
 	<array>
 		<dict>
+			<key>name</key>
+			<string>GAbstractSlideContainer</string>
 			<key>displayName</key>
-			<string>Direction</string>
+			<string>GAbstractSlideContainer</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>1</integer>
+			<key>displayName</key>
+			<string>MoveType</string>
 			<key>type</key>
 			<string>IntegerLabeled</string>
 			<key>name</key>
-			<string>direction</string>
+			<string>slideLayerMoveType</string>
 			<key>extra</key>
-			<string>Horizontal|0|Vertical|1</string>
+			<string>Auto|0|AdjustToSpecialPoint|1</string>
 		</dict>
 		<dict>
-			<key>readOnly</key>
+			<key>default</key>
+			<integer>1</integer>
+			<key>displayName</key>
+			<string>OutBoundMoveType</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>outBoundMoveType</string>
+			<key>extra</key>
+			<string>DontMove|0|EaseOutMove|1</string>
+		</dict>
+	</array>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>animatable</key>
 			<true/>
 			<key>displayName</key>
-			<string>SlideBoundOrigin</string>
+			<string>Pos&amp;SlideOrigin</string>
 			<key>type</key>
 			<string>Position</string>
 			<key>name</key>
-			<string>slideBoundOrigin</string>
+			<string>position</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>100</integer>
+				<integer>100</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>TouchRect Size</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>defaultSerialization</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>ScaleLock</string>
+			<key>name</key>
+			<string>scale</string>
+			<key>displayName</key>
+			<string>Scale</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<real>0</real>
+				<real>0</real>
+			</array>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>anchorPoint</string>
+			<key>displayName</key>
+			<string>AnchorPos&amp;SlideDirection</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>Degrees</string>
+			<key>name</key>
+			<string>rotation</string>
+			<key>displayName</key>
+			<string>Rotation</string>
 		</dict>
 		<dict>
 			<key>readOnly</key>
 			<true/>
 			<key>type</key>
-			<string>Size</string>
+			<string>Check</string>
 			<key>name</key>
-			<string>slideBoundSize</string>
+			<string>ignoreAnchorPointForPosition</string>
 			<key>displayName</key>
-			<string>SlideBoundSize</string>
+			<string>Ignore anchor point</string>
 		</dict>
 	</array>
 </dict>

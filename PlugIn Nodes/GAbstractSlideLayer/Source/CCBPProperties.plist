@@ -55,24 +55,24 @@
 			<string>Horizontal|0|Vertical|1|Both|2</string>
 		</dict>
 		<dict>
-			<key>default</key>
-			<real>5.1</real>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>friction</string>
 			<key>displayName</key>
-			<string>Friction</string>
+			<string>MoveType</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>slideLayerMoveType</string>
+			<key>extra</key>
+			<string>Auto|0|AdjustToSpecialPoint|1</string>
 		</dict>
 		<dict>
-			<key>default</key>
-			<real>5.1</real>
-			<key>type</key>
-			<string>Float</string>
-			<key>name</key>
-			<string>mass</string>
 			<key>displayName</key>
-			<string>Mass</string>
+			<string>OutBoundMoveType</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>outBoundMoveType</string>
+			<key>extra</key>
+			<string>DontMove|0|EaseOutMove|1</string>
 		</dict>
 	</array>
 </dict>

@@ -25,6 +25,8 @@
 			<true/>
 		</dict>
 		<dict>
+			<key>default</key>
+			<integer>1</integer>
 			<key>displayName</key>
 			<string>Direction</string>
 			<key>type</key>

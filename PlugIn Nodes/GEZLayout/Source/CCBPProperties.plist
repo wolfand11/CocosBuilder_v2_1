@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>GAbstractLayout</string>
+	<key>canHaveChildren</key>
+	<string>NO</string>
+	<key>className</key>
+	<string>GEZLayout</string>
+	<key>editorClassName</key>
+	<string>GEZLayout</string>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>GEZLayout</string>
+			<key>displayName</key>
+			<string>GEZLayout</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<integer>0</integer>
+			<key>displayName</key>
+			<string>StartShowPageIndex</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>startShowPageIndex</string>
+			<key>extra</key>
+			<string>zero|0|one|1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

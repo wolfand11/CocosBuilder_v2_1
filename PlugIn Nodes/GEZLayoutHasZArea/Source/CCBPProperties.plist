@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>inheritsFrom</key>
-	<string>GAbstractLayout</string>
+	<string>GEZLayout</string>
 	<key>canHaveChildren</key>
 	<string>NO</string>
 	<key>className</key>

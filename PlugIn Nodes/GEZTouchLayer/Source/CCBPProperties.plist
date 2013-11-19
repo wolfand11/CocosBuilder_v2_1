@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>inheritsFrom</key>
-	<string>CCNode</string>
+	<string>GLayerPropertyExtension</string>
 	<key>canBeRootNode</key>
 	<true/>
 	<key>canHaveChildren</key>
@@ -11,7 +11,7 @@
 	<key>className</key>
 	<string>GEZTouchLayer</string>
 	<key>editorClassName</key>
-	<string>CCNode</string>
+	<string>GLayerPropertyExtension</string>
 	<key>properties</key>
 	<array>
 		<dict>

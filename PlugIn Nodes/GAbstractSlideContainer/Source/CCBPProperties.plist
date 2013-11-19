@@ -50,6 +50,47 @@
 	<key>propertiesOverridden</key>
 	<array>
 		<dict>
+			<key>animatable</key>
+			<true/>
+			<key>displayName</key>
+			<string>Pos&amp;SlideOrigin</string>
+			<key>type</key>
+			<string>Position</string>
+			<key>name</key>
+			<string>position</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<integer>100</integer>
+				<integer>100</integer>
+			</array>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>TouchRect Size</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>defaultSerialization</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+			</array>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>ScaleLock</string>
+			<key>name</key>
+			<string>scale</string>
+			<key>displayName</key>
+			<string>Scale</string>
+		</dict>
+		<dict>
 			<key>default</key>
 			<array>
 				<real>0</real>
@@ -61,6 +102,30 @@
 			<string>anchorPoint</string>
 			<key>displayName</key>
 			<string>AnchorPos&amp;SlideDirection</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>defaultSerialization</key>
+			<integer>0</integer>
+			<key>animatable</key>
+			<true/>
+			<key>type</key>
+			<string>Degrees</string>
+			<key>name</key>
+			<string>rotation</string>
+			<key>displayName</key>
+			<string>Rotation</string>
+		</dict>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Check</string>
+			<key>name</key>
+			<string>ignoreAnchorPointForPosition</string>
+			<key>displayName</key>
+			<string>Ignore anchor point</string>
 		</dict>
 	</array>
 </dict>

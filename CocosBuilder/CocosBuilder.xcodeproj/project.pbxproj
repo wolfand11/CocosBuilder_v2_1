@@ -29,6 +29,7 @@
 		46871CAF180A9D41006861C5 /* GTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C97180A9D41006861C5 /* GTab.m */; };
 		46871CB8180AE6CD006861C5 /* InspectorExPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871CB6180AE6CD006861C5 /* InspectorExPos.m */; };
 		46871CB9180AE6CD006861C5 /* InspectorExPos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46871CB7180AE6CD006861C5 /* InspectorExPos.xib */; };
+		4698E53E184DDD92007CE141 /* GClipingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4698E53D184DDD92007CE141 /* GClipingLayer.m */; };
 		46DC246A183383E50072C3A5 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 46DC2469183383E50072C3A5 /* icon.icns */; };
 		46DC247C1835EC010072C3A5 /* GEZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DC247B1835EC010072C3A5 /* GEZLayout.m */; };
 		46ED10981842FBF000AC7034 /* GGraySprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 46ED10971842FBF000AC7034 /* GGraySprite.m */; };
@@ -933,6 +934,8 @@
 		46871CB5180AE6CD006861C5 /* InspectorExPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorExPos.h; sourceTree = "<group>"; };
 		46871CB6180AE6CD006861C5 /* InspectorExPos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorExPos.m; sourceTree = "<group>"; };
 		46871CB7180AE6CD006861C5 /* InspectorExPos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorExPos.xib; sourceTree = "<group>"; };
+		4698E53C184DDD92007CE141 /* GClipingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GClipingLayer.h; sourceTree = "<group>"; };
+		4698E53D184DDD92007CE141 /* GClipingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GClipingLayer.m; sourceTree = "<group>"; };
 		46DC2469183383E50072C3A5 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		46DC247A1835EC010072C3A5 /* GEZLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEZLayout.h; sourceTree = "<group>"; };
 		46DC247B1835EC010072C3A5 /* GEZLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEZLayout.m; sourceTree = "<group>"; };
@@ -2239,6 +2242,8 @@
 				46ED109B1842FCA600AC7034 /* gShader_RGBToGray_frag.h */,
 				46ED10961842FBF000AC7034 /* GGraySprite.h */,
 				46ED10971842FBF000AC7034 /* GGraySprite.m */,
+				4698E53C184DDD92007CE141 /* GClipingLayer.h */,
+				4698E53D184DDD92007CE141 /* GClipingLayer.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -5269,6 +5274,7 @@
 				E36A27F9152263B4004986A8 /* CCShaderCache.m in Sources */,
 				E36A27FA152263B4004986A8 /* ccShaders.m in Sources */,
 				E36A27FB152263B4004986A8 /* CCSprite.m in Sources */,
+				4698E53E184DDD92007CE141 /* GClipingLayer.m in Sources */,
 				E36A27FC152263B4004986A8 /* CCSpriteBatchNode.m in Sources */,
 				E36A27FD152263B4004986A8 /* CCSpriteFrame.m in Sources */,
 				E36A27FE152263B4004986A8 /* CCSpriteFrameCache.m in Sources */,

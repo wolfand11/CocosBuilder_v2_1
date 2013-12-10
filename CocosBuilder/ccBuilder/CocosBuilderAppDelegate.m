@@ -1673,6 +1673,10 @@ static BOOL hideAllToNextSeparator;
         {
             // do nothing
         }
+        else if ([requireParent isEqualToString:@"CCMenu"] && [nodeInfoParent.plugIn.nodeClassName isEqualToString:@"GMenu"])
+        {
+            // do nothing
+        }
         else
         {
             self.errorDescription = [NSString stringWithFormat: @"A %@ must be added to a %@",nodeInfo.plugIn.nodeClassName, requireParent];

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461317CB188E251600C7E3D7 /* CCFontDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 461317CA188E251600C7E3D7 /* CCFontDefinition.m */; };
+		461317CE188E264500C7E3D7 /* CCFontDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 461317CA188E251600C7E3D7 /* CCFontDefinition.m */; };
 		4644DC5E182B8EF500823CB0 /* GEZLayoutHasZArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 4644DC5D182B8EF500823CB0 /* GEZLayoutHasZArea.m */; };
 		467F912F185595A000194F38 /* GMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 467F912E185595A000194F38 /* GMenu.m */; };
 		46871C9D180A9D41006861C5 /* GAbstractContainerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 46871C6F180A9D41006861C5 /* GAbstractContainerItem.m */; };
@@ -891,6 +893,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		461317C9188E251600C7E3D7 /* CCFontDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFontDefinition.h; sourceTree = "<group>"; };
+		461317CA188E251600C7E3D7 /* CCFontDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFontDefinition.m; sourceTree = "<group>"; };
 		4644DC5C182B8EF500823CB0 /* GEZLayoutHasZArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEZLayoutHasZArea.h; sourceTree = "<group>"; };
 		4644DC5D182B8EF500823CB0 /* GEZLayoutHasZArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEZLayoutHasZArea.m; sourceTree = "<group>"; };
 		467F912D185595A000194F38 /* GMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMenu.h; sourceTree = "<group>"; };
@@ -3485,6 +3489,8 @@
 		E36A270F152263B4004986A8 /* cocos2d */ = {
 			isa = PBXGroup;
 			children = (
+				461317C9188E251600C7E3D7 /* CCFontDefinition.h */,
+				461317CA188E251600C7E3D7 /* CCFontDefinition.m */,
 				E3893C8B1666B9F500299482 /* CCClippingNode.h */,
 				E3893C8C1666B9F500299482 /* CCClippingNode.m */,
 				E3893C8D1666B9F500299482 /* CCDrawNode.h */,
@@ -5099,6 +5105,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461317CE188E264500C7E3D7 /* CCFontDefinition.m in Sources */,
 				835DB0C9171563E1003A2F7B /* GCDAsyncSocket.m in Sources */,
 				835DB0C117156341003A2F7B /* CCBHTTPServer.m in Sources */,
 				835DB08D171562D6003A2F7B /* DDData.m in Sources */,
@@ -5513,6 +5520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E398C03B14FB8F850078E771 /* CCBXCocos2diPhone.m in Sources */,
+				461317CB188E251600C7E3D7 /* CCFontDefinition.m in Sources */,
 				E3F2C21314FC157E007B660D /* CCBXCocos2diPhoneWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

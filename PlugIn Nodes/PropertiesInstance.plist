@@ -168,6 +168,28 @@
 			<key>displayName</key>
 			<string>Scale</string>
 		</dict>
+		<dict>
+			<key>defaultSerialization</key>
+			<array>
+				<integer>255</integer>
+				<integer>255</integer>
+				<integer>255</integer>
+			</array>
+			<key>animatable</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>255</integer>
+				<integer>255</integer>
+				<integer>255</integer>
+			</array>
+			<key>displayName</key>
+			<string>Color</string>
+			<key>type</key>
+			<string>Color3</string>
+			<key>name</key>
+			<string>color</string>
+		</dict>
 	</array>
 	<key>propertiesOverridden</key>
 	<array>

@@ -95,7 +95,7 @@
 			<key>type</key>
 			<string>Color3</string>
 			<key>name</key>
-			<string>color</string>
+			<string>labelFontColor</string>
 		</dict>
 		<dict>
 			<key>affectsProperties</key>
@@ -142,6 +142,92 @@
 			<string>Text</string>
 			<key>name</key>
 			<string>string</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Label Shadow</string>
+			<key>name</key>
+			<string>LabelShadow</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<false/>
+			<key>displayName</key>
+			<string>Enable Shadow</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>name</key>
+			<string>enableShadow</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>labelShadowSize</string>
+			<key>displayName</key>
+			<string>Shadow Size</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<real>0</real>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>labelShadowOpacity</string>
+			<key>displayName</key>
+			<string>Shadow Opacity</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<real>0</real>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>labelShadowBlur</string>
+			<key>displayName</key>
+			<string>Shadow Blur</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Label Stroke</string>
+			<key>name</key>
+			<string>LabelStroke</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<false/>
+			<key>displayName</key>
+			<string>Enable Stroke</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>name</key>
+			<string>enableStroke</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<real>0</real>
+			<key>type</key>
+			<string>Float</string>
+			<key>name</key>
+			<string>labelStrokeSize</string>
+			<key>displayName</key>
+			<string>Stroke Size</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Stroke Color</string>
+			<key>type</key>
+			<string>Color3</string>
+			<key>name</key>
+			<string>labelStrokeColor</string>
 		</dict>
 	</array>
 </dict>

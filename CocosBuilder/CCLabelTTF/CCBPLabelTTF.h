@@ -27,6 +27,13 @@
 @interface CCBPLabelTTF : CCLabelTTF
 
 // Add property to maintain backwards compatibility
-@property (nonatomic,assign) int alignment;
-
+@property (nonatomic,assign) int  alignment;
+@property (nonatomic,assign) BOOL enableShadow;
+@property (nonatomic,assign) CGSize     labelShadowSize;
+@property (nonatomic,assign) float      labelShadowBlur;
+@property (nonatomic,assign) float      labelShadowOpacity;
+@property (nonatomic,assign) BOOL       enableStroke;
+@property (nonatomic,assign) float      labelStrokeSize;
+@property (nonatomic,assign) ccColor3B  labelStrokeColor;
+@property (nonatomic,assign) ccColor3B  labelFontColor;
 @end

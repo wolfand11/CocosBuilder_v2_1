@@ -40,6 +40,15 @@ typedef enum
     ccColor3B           shadowColor;
     GLuint              shadowOpacity;
 }
+@property (nonatomic,assign) BOOL       enableShadow;
+@property (nonatomic,assign) CGSize     labelShadowSize;
+@property (nonatomic,assign) float      labelShadowBlur;
+@property (nonatomic,assign) float      labelShadowOpacity;
+@property (nonatomic,assign) BOOL       enableStroke;
+@property (nonatomic,assign) float      labelStrokeSize;
+@property (nonatomic,assign) ccColor3B  labelStrokeColor;
+@property (nonatomic,assign) ccColor3B  labelFontColor;
+
 @property (nonatomic,assign,readwrite,setter = setShadowType:)GShadowType shadowType;
 @property (nonatomic,assign,readwrite,setter = setShadowSize:)float       shadowSize;
 @property (nonatomic,assign,readwrite,setter = setShadowColor:)ccColor3B  shadowColor;

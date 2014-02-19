@@ -30,6 +30,14 @@
 @end
 
 @implementation GShadowLabelTTF
+@synthesize enableShadow;
+@synthesize labelShadowSize;
+@synthesize labelShadowBlur;
+@synthesize labelShadowOpacity;
+@synthesize enableStroke;
+@synthesize labelStrokeSize;
+@synthesize labelStrokeColor;
+@synthesize labelFontColor;
 
 @synthesize shadowType;
 @synthesize shadowSize;
